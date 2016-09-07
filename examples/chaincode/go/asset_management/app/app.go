@@ -22,8 +22,8 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/hyperledger/fabric/core/crypto"
-	pb "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/core/crypto"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 	"github.com/op/go-logging"
 	"google.golang.org/grpc"
 )

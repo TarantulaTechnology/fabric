@@ -23,8 +23,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/hyperledger/fabric/core/crypto/primitives"
-	"github.com/hyperledger/fabric/core/crypto/utils"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives"
+	"github.com/TarantulaTechnology/fabric/core/crypto/utils"
 )
 
 type aesSecretKeyImpl struct {

@@ -19,7 +19,7 @@ package buckettree
 import (
 	"testing"
 
-	"github.com/hyperledger/fabric/core/ledger/testutil"
+	"github.com/TarantulaTechnology/fabric/core/ledger/testutil"
 	"github.com/spf13/viper"
 )
 

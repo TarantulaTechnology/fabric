@@ -22,14 +22,14 @@ import (
 	"fmt"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/core/chaincode"
-	"github.com/hyperledger/fabric/core/chaincode/platforms"
-	"github.com/hyperledger/fabric/core/config"
-	"github.com/hyperledger/fabric/core/container"
-	"github.com/hyperledger/fabric/core/crypto"
-	"github.com/hyperledger/fabric/core/peer"
-	"github.com/hyperledger/fabric/core/util"
-	pb "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/core/chaincode"
+	"github.com/TarantulaTechnology/fabric/core/chaincode/platforms"
+	"github.com/TarantulaTechnology/fabric/core/config"
+	"github.com/TarantulaTechnology/fabric/core/container"
+	"github.com/TarantulaTechnology/fabric/core/crypto"
+	"github.com/TarantulaTechnology/fabric/core/peer"
+	"github.com/TarantulaTechnology/fabric/core/util"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 	"github.com/op/go-logging"
 	"github.com/spf13/viper"
 	"golang.org/x/net/context"
@@ -141,7 +141,7 @@ func deployInternal(deployer crypto.Client, adminCert crypto.CertificateHandler)
 	// Prepare the spec. The metadata includes the identity of the administrator
 	spec := &pb.ChaincodeSpec{
 		Type:        1,
-		ChaincodeID: &pb.ChaincodeID{Path: "github.com/hyperledger/fabric/examples/chaincode/go/asset_management"},
+		ChaincodeID: &pb.ChaincodeID{Path: "github.com/TarantulaTechnology/fabric/examples/chaincode/go/asset_management"},
 		//ChaincodeID:          &pb.ChaincodeID{Name: chaincodeName},
 		CtorMsg:              &pb.ChaincodeInput{Function: "init", Args: []string{}},
 		Metadata:             adminCert.GetCertificate(),

@@ -24,8 +24,8 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/hyperledger/fabric/consensus"
-	"github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/consensus"
+	"github.com/TarantulaTechnology/fabric/protos"
 )
 
 type LedgerDirectory interface {

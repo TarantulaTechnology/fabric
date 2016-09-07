@@ -21,8 +21,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hyperledger/fabric/consensus"
-	pb "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/consensus"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 )
 
 type communicator interface {

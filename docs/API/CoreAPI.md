@@ -11,16 +11,16 @@ This document covers the available APIs for interacting with a peer node. Three 
    * [Marbles Demo Application](#marbles-demo-application)
    * [Commercial Paper Demo Application](#commercial-paper-demo-application)
 
-**Note:** If you are working with APIs with security enabled, please review the [security setup instructions](https://github.com/hyperledger/fabric/blob/master/docs/API/SandboxSetup.md#security-setup-optional) before proceeding.
+**Note:** If you are working with APIs with security enabled, please review the [security setup instructions](https://github.com/TarantulaTechnology/fabric/blob/master/docs/API/SandboxSetup.md#security-setup-optional) before proceeding.
 
 ## CLI
 
 To view the currently available CLI commands, execute the following:
 
-    cd /opt/gopath/src/github.com/hyperledger/fabric
+    cd /opt/gopath/src/github.com/TarantulaTechnology/fabric
     build/bin/peer
 
-You will see output similar to the example below (**NOTE:** rootcommand below is hardcoded in [main.go](https://github.com/hyperledger/fabric/blob/master/main.go). Currently, the build will create a *peer* executable file).
+You will see output similar to the example below (**NOTE:** rootcommand below is hardcoded in [main.go](https://github.com/TarantulaTechnology/fabric/blob/master/main.go). Currently, the build will create a *peer* executable file).
 
 ```
     Usage:
@@ -50,8 +50,8 @@ below:
 Command | **stdout** result in the event of success
 --- | ---
 `node start`       | N/A
-`node status`      | String form of [StatusCode](https://github.com/hyperledger/fabric/blob/master/protos/server_admin.proto#L36)
-`node stop`        | String form of [StatusCode](https://github.com/hyperledger/fabric/blob/master/protos/server_admin.proto#L36)
+`node status`      | String form of [StatusCode](https://github.com/TarantulaTechnology/fabric/blob/master/protos/server_admin.proto#L36)
+`node stop`        | String form of [StatusCode](https://github.com/TarantulaTechnology/fabric/blob/master/protos/server_admin.proto#L36)
 `network login`    | N/A
 `network list`     | The list of network connections to the peer node.
 `chaincode deploy` | The chaincode container name (hash) required for subsequent `chaincode invoke` and `chaincode query` commands
@@ -63,19 +63,19 @@ Command | **stdout** result in the event of success
 
 Deploy creates the docker image for the chaincode and subsequently deploys the package to the validating peer. An example is below.
 
-`peer chaincode deploy -p github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02 -c '{"Function":"init", "Args": ["a","100", "b", "200"]}'`
+`peer chaincode deploy -p github.com/TarantulaTechnology/fabric/examples/chaincode/go/chaincode_example02 -c '{"Function":"init", "Args": ["a","100", "b", "200"]}'`
 
 The response to the chaincode deploy command will contain the chaincode identifier (hash) which will be required on subsequent `chaincode invoke` and `chaincode query` commands in order to identify the deployed chaincode.
 
 With security enabled, modify the command to include the -u parameter passing the username of a logged in user as follows:
 
-`peer chaincode deploy -u jim -p github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02 -c '{"Function":"init", "Args": ["a","100", "b", "200"]}'`
+`peer chaincode deploy -u jim -p github.com/TarantulaTechnology/fabric/examples/chaincode/go/chaincode_example02 -c '{"Function":"init", "Args": ["a","100", "b", "200"]}'`
 
 **Note:** If your GOPATH environment variable contains more than one element, the chaincode must be found in the first one or deployment will fail.
 
 ### Verify Results
 
-To verify that the block containing the latest transaction has been added to the blockchain, use the `/chain` REST endpoint from the command line. Target the IP address of either a validating or a non-validating node. In the example below, 172.17.0.2 is the IP address of a validating or a non-validating node and 5000 is the REST interface port defined in [core.yaml](https://github.com/hyperledger/fabric/blob/master/peer/core.yaml).
+To verify that the block containing the latest transaction has been added to the blockchain, use the `/chain` REST endpoint from the command line. Target the IP address of either a validating or a non-validating node. In the example below, 172.17.0.2 is the IP address of a validating or a non-validating node and 5000 is the REST interface port defined in [core.yaml](https://github.com/TarantulaTechnology/fabric/blob/master/peer/core.yaml).
 
 `curl 172.17.0.2:5000/chain`
 
@@ -88,7 +88,7 @@ An example of the response is below.
 }
 ```
 
-The returned BlockchainInfo message is defined inside [fabric.proto](https://github.com/hyperledger/fabric/blob/master/protos/fabric.proto#L96).
+The returned BlockchainInfo message is defined inside [fabric.proto](https://github.com/TarantulaTechnology/fabric/blob/master/protos/fabric.proto#L96).
 
 ```
 message BlockchainInfo {
@@ -102,7 +102,7 @@ To verify that a specific block is inside the blockchain, use the `/chain/blocks
 
 `curl 172.17.0.2:5000/chain/blocks/0`
 
-The returned Block message structure is defined inside [fabric.proto](https://github.com/hyperledger/fabric/blob/master/protos/fabric.proto#L84).
+The returned Block message structure is defined inside [fabric.proto](https://github.com/TarantulaTechnology/fabric/blob/master/protos/fabric.proto#L84).
 
 ```
 message Block {
@@ -123,7 +123,7 @@ An example of a returned Block structure is below.
     "transactions":[{
         "type":1,
         "chaincodeID": {
-            "path":"github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02"
+            "path":"github.com/TarantulaTechnology/fabric/examples/chaincode/go/chaincode_example02"
         },
         "payload":"ClwIARJYCk9naXRod...",
         "uuid":"abdcec99-ae5e-415e-a8be-1fca8e38ba71"
@@ -132,24 +132,24 @@ An example of a returned Block structure is below.
 }
 ```
 
-For additional information on the available CLI commands, please see the [protocol specification](https://github.com/hyperledger/fabric/blob/master/docs/protocol-spec.md) section 6.3 on CLI.
+For additional information on the available CLI commands, please see the [protocol specification](https://github.com/TarantulaTechnology/fabric/blob/master/docs/protocol-spec.md) section 6.3 on CLI.
 
 ## REST API
 
 You can work with the REST API through any tool of your choice. For example, the curl command line utility or a browser based client such as the Firefox Rest Client or Chrome Postman. You can likewise trigger REST requests directly through [Swagger](http://swagger.io/). You can utilize the Swagger service directly or, if you prefer, you can set up Swagger locally by following the instructions [here](#to-set-up-swagger-ui).
 
-**Note:** The default REST interface port is 5000. It can be configured in [core.yaml](https://github.com/hyperledger/fabric/blob/master/peer/core.yaml) using the `rest.address` property. If using Vagrant, the REST port mapping is defined in [Vagrantfile](https://github.com/hyperledger/fabric/blob/master/devenv/Vagrantfile).
+**Note:** The default REST interface port is 5000. It can be configured in [core.yaml](https://github.com/TarantulaTechnology/fabric/blob/master/peer/core.yaml) using the `rest.address` property. If using Vagrant, the REST port mapping is defined in [Vagrantfile](https://github.com/TarantulaTechnology/fabric/blob/master/devenv/Vagrantfile).
 
-**Note on constructing a test blockchain** If you want to test the REST API locally, construct a test blockchain by running the TestServerOpenchain_API_GetBlockCount test implemented inside [api_test.go](https://github.com/hyperledger/fabric/blob/master/core/rest/api_test.go). This test will create a test blockchain with 5 blocks. Subsequently restart the peer process.
+**Note on constructing a test blockchain** If you want to test the REST API locally, construct a test blockchain by running the TestServerOpenchain_API_GetBlockCount test implemented inside [api_test.go](https://github.com/TarantulaTechnology/fabric/blob/master/core/rest/api_test.go). This test will create a test blockchain with 5 blocks. Subsequently restart the peer process.
 
 ```
-    cd /opt/gopath/src/github.com/hyperledger/fabric/core/rest
+    cd /opt/gopath/src/github.com/TarantulaTechnology/fabric/core/rest
     go test -v -run TestServerOpenchain_API_GetBlockCount
 ```
 
 ### REST Endpoints
 
-To learn about the REST API through Swagger, please take a look at the Swagger document [here](https://github.com/hyperledger/fabric/blob/master/core/rest/rest_api.json). You can upload the service description file to the Swagger service directly or, if you prefer, you can set up Swagger locally by following the instructions [here](#to-set-up-swagger-ui).
+To learn about the REST API through Swagger, please take a look at the Swagger document [here](https://github.com/TarantulaTechnology/fabric/blob/master/core/rest/rest_api.json). You can upload the service description file to the Swagger service directly or, if you prefer, you can set up Swagger locally by following the instructions [here](#to-set-up-swagger-ui).
 
 * [Block](#block)
   * GET /chain/blocks/{Block}
@@ -176,7 +176,7 @@ To learn about the REST API through Swagger, please take a look at the Swagger d
 
 * **GET /chain/blocks/{Block}**
 
-Use the Block API to retrieve the contents of various blocks from the blockchain. The returned Block message structure is defined inside [fabric.proto](https://github.com/hyperledger/fabric/blob/master/protos/fabric.proto#L84).
+Use the Block API to retrieve the contents of various blocks from the blockchain. The returned Block message structure is defined inside [fabric.proto](https://github.com/TarantulaTechnology/fabric/blob/master/protos/fabric.proto#L84).
 
 ```
 message Block {
@@ -192,7 +192,7 @@ message Block {
 
 * **GET /chain**
 
-Use the Chain API to retrieve the current state of the blockchain. The returned BlockchainInfo message is defined inside [fabric.proto](https://github.com/hyperledger/fabric/blob/master/protos/fabric.proto#L96).
+Use the Chain API to retrieve the current state of the blockchain. The returned BlockchainInfo message is defined inside [fabric.proto](https://github.com/TarantulaTechnology/fabric/blob/master/protos/fabric.proto#L96).
 
 ```
 message BlockchainInfo {
@@ -210,7 +210,7 @@ message BlockchainInfo {
 
 **[DEPRECATED] The /devops endpoints have been deprecated and are superseded by the [/chaincode](#chaincode) endpoint. Please use the [/chaincode](#chaincode) endpoint to deploy, invoke, and query a chaincode. [DEPRECATED]**
 
-Use the Devops APIs to deploy, invoke, and query a chaincode. The required [ChaincodeSpec](https://github.com/hyperledger/fabric/blob/master/protos/chaincode.proto#L60) and [ChaincodeInvocationSpec](https://github.com/hyperledger/fabric/blob/master/protos/chaincode.proto#L89) payloads are defined in [chaincode.proto](https://github.com/hyperledger/fabric/blob/master/protos/chaincode.proto).
+Use the Devops APIs to deploy, invoke, and query a chaincode. The required [ChaincodeSpec](https://github.com/TarantulaTechnology/fabric/blob/master/protos/chaincode.proto#L60) and [ChaincodeInvocationSpec](https://github.com/TarantulaTechnology/fabric/blob/master/protos/chaincode.proto#L89) payloads are defined in [chaincode.proto](https://github.com/TarantulaTechnology/fabric/blob/master/protos/chaincode.proto).
 
 ```
 message ChaincodeSpec {
@@ -237,7 +237,7 @@ message ChaincodeInvocationSpec {
 }
 ```
 
-**Note:** The deploy transaction requires a 'path' parameter to locate the chaincode source-code in the file system, build it, and deploy it to the validating peers. On the other hand, invoke and query transactions require a 'name' parameter to reference the chaincode that has already been deployed. These 'path' and 'name' parameters are specified in the ChaincodeID, defined in [chaincode.proto](https://github.com/hyperledger/fabric/blob/master/protos/chaincode.proto#L41). The only exception to the aforementioned rule is when the peer is running in chaincode development mode (as opposed to production mode), i.e. the user starts the peer with `--peer-chaincodedev` and runs the chaincode manually in a separate terminal window. In that case, the deploy transaction requires a 'name' parameter that is specified by the end user.
+**Note:** The deploy transaction requires a 'path' parameter to locate the chaincode source-code in the file system, build it, and deploy it to the validating peers. On the other hand, invoke and query transactions require a 'name' parameter to reference the chaincode that has already been deployed. These 'path' and 'name' parameters are specified in the ChaincodeID, defined in [chaincode.proto](https://github.com/TarantulaTechnology/fabric/blob/master/protos/chaincode.proto#L41). The only exception to the aforementioned rule is when the peer is running in chaincode development mode (as opposed to production mode), i.e. the user starts the peer with `--peer-chaincodedev` and runs the chaincode manually in a separate terminal window. In that case, the deploy transaction requires a 'name' parameter that is specified by the end user.
 
 ```
 message ChaincodeID {
@@ -256,7 +256,7 @@ An example of a valid ChaincodeSpec message for a deployment transaction is show
 {
     "type": "GOLANG",
     "chaincodeID":{
-        "path":"github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02"
+        "path":"github.com/TarantulaTechnology/fabric/examples/chaincode/go/chaincode_example02"
     },
     "ctorMsg": {
         "function":"init",
@@ -265,7 +265,7 @@ An example of a valid ChaincodeSpec message for a deployment transaction is show
   }
 ```
 
-An example of a valid ChaincodeInvocationSpec message for an invocation transaction is shown below. Consult [chaincode.proto](https://github.com/hyperledger/fabric/blob/master/protos/chaincode.proto#L89) for more information.
+An example of a valid ChaincodeInvocationSpec message for an invocation transaction is shown below. Consult [chaincode.proto](https://github.com/TarantulaTechnology/fabric/blob/master/protos/chaincode.proto#L89) for more information.
 
 ```
 {
@@ -337,7 +337,7 @@ Use the /chaincode endpoint to deploy, invoke, and query a target chaincode. Thi
 
 The /chaincode endpoint implements the [JSON RPC 2.0 specification](http://www.jsonrpc.org/specification) and as such, must have the required fields of `jsonrpc`, `method`, and in our case `params` supplied within the payload. The client should also add the `id` element within the payload if they wish to receive a response to the request. If the `id` element is missing from the request payload, the request is assumed to be a notification and the server will not produce a response.
 
-The following sample payloads may be used to deploy, invoke, and query a sample chaincode. To deploy a chaincode, supply the [ChaincodeSpec](https://github.com/hyperledger/fabric/blob/master/protos/chaincode.proto#L60) identifying the chaincode to deploy within the request payload.
+The following sample payloads may be used to deploy, invoke, and query a sample chaincode. To deploy a chaincode, supply the [ChaincodeSpec](https://github.com/TarantulaTechnology/fabric/blob/master/protos/chaincode.proto#L60) identifying the chaincode to deploy within the request payload.
 
 Chaincode Deployment Request without security enabled:
 
@@ -350,7 +350,7 @@ POST host:port/chaincode
   "params": {
     "type": 1,
     "chaincodeID":{
-        "path":"github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02"
+        "path":"github.com/TarantulaTechnology/fabric/examples/chaincode/go/chaincode_example02"
     },
     "ctorMsg": {
         "function":"init",
@@ -374,7 +374,7 @@ POST host:port/chaincode
   "params": {
     "type": 1,
     "chaincodeID":{
-        "path":"github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02"
+        "path":"github.com/TarantulaTechnology/fabric/examples/chaincode/go/chaincode_example02"
     },
     "ctorMsg": {
         "function":"init",
@@ -401,7 +401,7 @@ Chaincode Deployment Response:
 }
 ```
 
-To invoke a chaincode, supply the [ChaincodeSpec](https://github.com/hyperledger/fabric/blob/master/protos/chaincode.proto#L60) identifying the chaincode to invoke within the request payload. Note the chaincode `name` field, which is the hash returned from the deployment request.
+To invoke a chaincode, supply the [ChaincodeSpec](https://github.com/TarantulaTechnology/fabric/blob/master/protos/chaincode.proto#L60) identifying the chaincode to invoke within the request payload. Note the chaincode `name` field, which is the hash returned from the deployment request.
 
 Chaincode Invocation Request without security enabled:
 
@@ -461,7 +461,7 @@ Chaincode Invocation Response:
 }
 ```
 
-To query a chaincode, supply the [ChaincodeSpec](https://github.com/hyperledger/fabric/blob/master/protos/chaincode.proto#L60) identifying the chaincode to query within the request payload. Note the chaincode `name` field, which is the hash returned from the deployment request.
+To query a chaincode, supply the [ChaincodeSpec](https://github.com/TarantulaTechnology/fabric/blob/master/protos/chaincode.proto#L60) identifying the chaincode to query within the request payload. Note the chaincode `name` field, which is the hash returned from the deployment request.
 
 Chaincode Query Request without security enabled:
 
@@ -527,7 +527,7 @@ Chaincode Query Response:
 
 Use the Network APIs to retrieve information about the network of peer nodes comprising the blockchain network.
 
-The /network/peers endpoint returns a list of all existing network connections for the target peer node. The list includes both validating and non-validating peers. The list of peers is returned as type [`PeersMessage`](https://github.com/hyperledger/fabric/blob/master/protos/fabric.proto#L138), containing an array of [`PeerEndpoint`](https://github.com/hyperledger/fabric/blob/master/protos/fabric.proto#L127).
+The /network/peers endpoint returns a list of all existing network connections for the target peer node. The list includes both validating and non-validating peers. The list of peers is returned as type [`PeersMessage`](https://github.com/TarantulaTechnology/fabric/blob/master/protos/fabric.proto#L138), containing an array of [`PeerEndpoint`](https://github.com/TarantulaTechnology/fabric/blob/master/protos/fabric.proto#L127).
 
 ```
 message PeersMessage {
@@ -565,7 +565,7 @@ message PeerID {
 
 Use the Registrar APIs to manage end user registration with the CA. These API endpoints are used to register a user with the CA, determine whether a given user is registered, and to remove any login tokens for a target user preventing them from executing any further transactions. The Registrar APIs are also used to retrieve user enrollment and transaction certificates from the system.
 
-The /registrar endpoint is used to register a user with the CA. The required Secret payload is defined in [devops.proto](https://github.com/hyperledger/fabric/blob/master/protos/devops.proto#L50).
+The /registrar endpoint is used to register a user with the CA. The required Secret payload is defined in [devops.proto](https://github.com/TarantulaTechnology/fabric/blob/master/protos/devops.proto#L50).
 
 ```
 message Secret {
@@ -595,7 +595,7 @@ The /registrar/{enrollmentID}/tcert endpoint retrieves the transaction certifica
 
 * **GET /transactions/{UUID}**
 
-Use the /transactions/{UUID} endpoint to retrieve an individual transaction matching the UUID from the blockchain. The returned transaction message is defined inside [fabric.proto](https://github.com/hyperledger/fabric/blob/master/protos/fabric.proto#L28).
+Use the /transactions/{UUID} endpoint to retrieve an individual transaction matching the UUID from the blockchain. The returned transaction message is defined inside [fabric.proto](https://github.com/TarantulaTechnology/fabric/blob/master/protos/fabric.proto#L28).
 
 ```
 message Transaction {
@@ -620,11 +620,11 @@ message Transaction {
 }
 ```
 
-For additional information on the REST endpoints and more detailed examples, please see the [protocol specification](https://github.com/hyperledger/fabric/blob/master/docs/protocol-spec.md) section 6.2 on the REST API.
+For additional information on the REST endpoints and more detailed examples, please see the [protocol specification](https://github.com/TarantulaTechnology/fabric/blob/master/docs/protocol-spec.md) section 6.2 on the REST API.
 
 ### To set up Swagger-UI
 
-[Swagger](http://swagger.io/) is a convenient package that allows you to describe and document your REST API in a single file. The REST API is described in [rest_api.json](https://github.com/hyperledger/fabric/blob/master/core/rest/rest_api.json). To interact with the peer node directly through the Swagger-UI, you can upload the available Swagger definition to the [Swagger service](http://swagger.io/). Alternatively, you may set up a Swagger installation on your machine by following the instructions below.
+[Swagger](http://swagger.io/) is a convenient package that allows you to describe and document your REST API in a single file. The REST API is described in [rest_api.json](https://github.com/TarantulaTechnology/fabric/blob/master/core/rest/rest_api.json). To interact with the peer node directly through the Swagger-UI, you can upload the available Swagger definition to the [Swagger service](http://swagger.io/). Alternatively, you may set up a Swagger installation on your machine by following the instructions below.
 
 1. You can use Node.js to serve up the rest_api.json locally. To do so, make sure you have Node.js installed on your local machine. If it is not installed, please download the [Node.js](https://nodejs.org/en/download/) package and install it.
 
@@ -635,7 +635,7 @@ For additional information on the REST endpoints and more detailed examples, ple
 3. Start up an http-server on your local machine to serve up the rest_api.json.
 
     ```
-    cd /opt/gopath/src/github.com/hyperledger/fabric/core/rest
+    cd /opt/gopath/src/github.com/TarantulaTechnology/fabric/core/rest
     http-server -a 0.0.0.0 -p 5554 --cors
     ```
 
@@ -652,14 +652,14 @@ For additional information on the REST endpoints and more detailed examples, ple
 7. Start up the peer node with no connections to a leader or validator as follows.
 
     ```
-    cd /opt/gopath/src/github.com/hyperledger/fabric
+    cd /opt/gopath/src/github.com/TarantulaTechnology/fabric
     build/bin/peer node start
     ```
 
-8. If you need to construct a test blockchain on the local peer node, run the the TestServerOpenchain_API_GetBlockCount test implemented inside [api_test.go](https://github.com/hyperledger/fabric/blob/master/core/rest/api_test.go). This test will create a blockchain with 5 blocks. Subsequently restart the peer process.
+8. If you need to construct a test blockchain on the local peer node, run the the TestServerOpenchain_API_GetBlockCount test implemented inside [api_test.go](https://github.com/TarantulaTechnology/fabric/blob/master/core/rest/api_test.go). This test will create a blockchain with 5 blocks. Subsequently restart the peer process.
 
     ```
-    cd /opt/gopath/src/github.com/hyperledger/fabric/core/rest
+    cd /opt/gopath/src/github.com/TarantulaTechnology/fabric/core/rest
     go test -v -run TestServerOpenchain_API_GetBlockCount
     ```
 
@@ -667,19 +667,19 @@ For additional information on the REST endpoints and more detailed examples, ple
 
 ## Node.js Application
 
-You can interface with the peer process from a Node.js application. One way to accomplish that is by relying on the Swagger API description document, [rest_api.json](https://github.com/hyperledger/fabric/blob/master/core/rest/rest_api.json ) and the [swagger-js plugin](https://github.com/swagger-api/swagger-js). Another way to accomplish that relies upon the IBM Blockchain [JS SDK](https://github.com/IBM-Blockchain/ibm-blockchain-js). Use the approach that you find the most convenient.
+You can interface with the peer process from a Node.js application. One way to accomplish that is by relying on the Swagger API description document, [rest_api.json](https://github.com/TarantulaTechnology/fabric/blob/master/core/rest/rest_api.json ) and the [swagger-js plugin](https://github.com/swagger-api/swagger-js). Another way to accomplish that relies upon the IBM Blockchain [JS SDK](https://github.com/IBM-Blockchain/ibm-blockchain-js). Use the approach that you find the most convenient.
 
-### [Using Swagger JS Plugin](https://github.com/hyperledger/fabric/blob/master/docs/API/Samples/Sample_1.js)
+### [Using Swagger JS Plugin](https://github.com/TarantulaTechnology/fabric/blob/master/docs/API/Samples/Sample_1.js)
 
 * Demonstrates interfacing with a peer node from a Node.js application.
 * Utilizes the Node.js swagger-js plugin: https://github.com/swagger-api/swagger-js
 
 **To run:**
 
-1. Build and install the [fabric core](https://github.com/hyperledger/fabric/blob/master/README.md#building-the-fabric-core-).
+1. Build and install the [fabric core](https://github.com/TarantulaTechnology/fabric/blob/master/README.md#building-the-fabric-core-).
 
     ```
-    cd /opt/gopath/src/github.com/hyperledger/fabric
+    cd /opt/gopath/src/github.com/TarantulaTechnology/fabric
     make peer
     ```
 
@@ -690,7 +690,7 @@ You can interface with the peer process from a Node.js application. One way to a
 3. Set up a test blockchain data structure (with 5 blocks only) by running a test from within Vagrant as follows. Subsequently restart the peer process.
 
     ```
-    cd /opt/gopath/src/github.com/hyperledger/fabric/core/rest
+    cd /opt/gopath/src/github.com/TarantulaTechnology/fabric/core/rest
     go test -v -run TestServerOpenchain_API_GetBlockCount
     ```
 
@@ -698,18 +698,18 @@ You can interface with the peer process from a Node.js application. One way to a
 
     ```
     npm install http-server -g
-    cd /opt/gopath/src/github.com/hyperledger/fabric/core/rest
+    cd /opt/gopath/src/github.com/TarantulaTechnology/fabric/core/rest
     http-server -a 0.0.0.0 -p 5554 --cors
     ```
 
-5. Download and unzip [Sample_1.zip](https://github.com/hyperledger/fabric/blob/master/docs/API/Samples/Sample_1.zip)
+5. Download and unzip [Sample_1.zip](https://github.com/TarantulaTechnology/fabric/blob/master/docs/API/Samples/Sample_1.zip)
 
     ```
     unzip Sample_1.zip -d Sample_1
     cd Sample_1
     ```
 
-6. Update the api_url variable within [openchain.js](https://github.com/hyperledger/fabric/blob/master/docs/API/Samples/Sample_1.js) to the appropriate URL if it is not already the default
+6. Update the api_url variable within [openchain.js](https://github.com/TarantulaTechnology/fabric/blob/master/docs/API/Samples/Sample_1.js) to the appropriate URL if it is not already the default
 
     `var api_url = 'http://localhost:5554/rest_api.json';`
 

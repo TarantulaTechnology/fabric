@@ -17,16 +17,16 @@ limitations under the License.
 package helper
 
 import (
-	"github.com/hyperledger/fabric/consensus"
-	"github.com/hyperledger/fabric/core/peer"
+	"github.com/TarantulaTechnology/fabric/consensus"
+	"github.com/TarantulaTechnology/fabric/core/peer"
 
 	"fmt"
 	"sync"
 
-	"github.com/hyperledger/fabric/consensus/controller"
-	"github.com/hyperledger/fabric/consensus/util"
-	"github.com/hyperledger/fabric/core/chaincode"
-	pb "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/consensus/controller"
+	"github.com/TarantulaTechnology/fabric/consensus/util"
+	"github.com/TarantulaTechnology/fabric/core/chaincode"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 	"golang.org/x/net/context"
 )
 

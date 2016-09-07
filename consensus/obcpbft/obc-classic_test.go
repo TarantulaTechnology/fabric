@@ -20,7 +20,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hyperledger/fabric/consensus"
+	"github.com/TarantulaTechnology/fabric/consensus"
 
 	"github.com/spf13/viper"
 )

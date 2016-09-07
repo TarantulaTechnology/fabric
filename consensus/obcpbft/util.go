@@ -22,7 +22,7 @@ package obcpbft
 import (
 	"encoding/base64"
 
-	"github.com/hyperledger/fabric/core/util"
+	"github.com/TarantulaTechnology/fabric/core/util"
 
 	"github.com/golang/protobuf/proto"
 )

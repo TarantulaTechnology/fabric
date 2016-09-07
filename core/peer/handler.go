@@ -25,8 +25,8 @@ import (
 	"github.com/looplab/fsm"
 	"github.com/spf13/viper"
 
-	"github.com/hyperledger/fabric/core/ledger/statemgmt"
-	pb "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/core/ledger/statemgmt"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 )
 
 // Handler peer handler implementation.

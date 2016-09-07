@@ -24,8 +24,8 @@ import (
 	"github.com/golang/protobuf/proto"
 	"golang.org/x/net/context"
 
-	"github.com/hyperledger/fabric/core/ledger"
-	pb "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/core/ledger"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 )
 
 //Execute - execute transaction or a query

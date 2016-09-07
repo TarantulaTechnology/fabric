@@ -83,7 +83,7 @@
 				<p>This purpose of this section is to help you quickly get a feel for HLC and how you may use it.  It is not intended to demonstrate all of it&#39;s power, but to demonstrate common use cases by example.</p>
 				<h3 id="some-basic-terminology">Some basic terminology</h3>
 				<p>First, there is some basic terminology you should understand.  In order to transact on a hyperledger blockchain, you must first have an identity which has been both <strong>registered</strong> and <strong>enrolled</strong>.</p>
-				<p>Think of <strong>registration</strong> as <em>issuing a user invitation</em> to join a blockchain.  It consists of adding a new user name (also called an <em>enrollment ID</em>) to the membership service configuration.  This can be done programatically with the <code>Member.register</code> method, or by adding the enrollment ID directly to the <a href="https://github.com/hyperledger/fabric/blob/master/membersrvc/membersrvc.yaml">membersrvc.yaml</a> configuration file.</p>
+				<p>Think of <strong>registration</strong> as <em>issuing a user invitation</em> to join a blockchain.  It consists of adding a new user name (also called an <em>enrollment ID</em>) to the membership service configuration.  This can be done programatically with the <code>Member.register</code> method, or by adding the enrollment ID directly to the <a href="https://github.com/TarantulaTechnology/fabric/blob/master/membersrvc/membersrvc.yaml">membersrvc.yaml</a> configuration file.</p>
 				<p>Think of <strong>enrollment</strong> as <em>accepting a user invitation</em> to join a blockchain.  This is always done by the entity that will transact on the blockchain.  This can be done programatically via the <code>Member.enroll</code> method.</p>
 				<h3 id="learn-by-example">Learn by example</h3>
 				<p>The best way to quickly learn HLC is by example.</p>
@@ -205,17 +205,17 @@ fabric
 </code></pre><p>Once you have placed your chaincode project inside the <code>src</code> directory in your local <code>$GOPATH</code> together with the <code>vendor</code> directory containing the Hyperledger Fabric, you need to verify that the chaincode builds in this directory. To do so execute <code>go build</code>. This step verifies that all of the chaincode dependencies are present.</p>
 				<pre><code>cd <span class="hljs-variable">$GOPATH</span>/src/github.com/chaincode_example02/
 go build
-</code></pre><p>Once the chaincode is built, you need to verify that <a href="https://github.com/hyperledger/fabric/blob/master/sdk/node/test/unit/chain-tests.js">chain-tests.js</a> unit test file points to the appropriate chaincode project path. The default directory is set to <code>github.com/chaincode_example02/</code> as shown below.</p>
+</code></pre><p>Once the chaincode is built, you need to verify that <a href="https://github.com/TarantulaTechnology/fabric/blob/master/sdk/node/test/unit/chain-tests.js">chain-tests.js</a> unit test file points to the appropriate chaincode project path. The default directory is set to <code>github.com/chaincode_example02/</code> as shown below.</p>
 				<pre><code>// Path <span class="hljs-keyword">to</span> the local directory containing the chaincode project under <span class="hljs-variable">$GOPATH</span>
 var testChaincodePath = <span class="hljs-string">"github.com/chaincode_example02/"</span>;
 </code></pre><p>Set the <code>DEPLOY_MODE</code> environment variable to <code>net</code> and run the chain-tests as follows:</p>
-				<pre><code>cd $GOPATH/src/github.com/hyperledger/fabric/sdk/<span class="hljs-keyword">node</span><span class="hljs-identifier">
+				<pre><code>cd $GOPATH/src/github.com/TarantulaTechnology/fabric/sdk/<span class="hljs-keyword">node</span><span class="hljs-identifier">
 </span><span class="hljs-title">export</span> <span class="hljs-variable">DEPLOY_MODE=</span>'net'
 <span class="hljs-keyword">node</span><span class="hljs-identifier"> </span><span class="hljs-title">test</span>/unit/chain-tests.js | node_modules/.bin/tap-<span class="hljs-operator">spec</span>
 </code></pre><h3 id="enabling-tls">Enabling TLS</h3>
 				<p>If you wish to activate TLS connection with the member services the following actions are needed:</p>
 				<ul>
-					<li>Modify <code>$GOPATH/src/github.com/hyperledger/fabric/membersrvc/membersrvc.yaml</code> as follows:</li>
+					<li>Modify <code>$GOPATH/src/github.com/TarantulaTechnology/fabric/membersrvc/membersrvc.yaml</code> as follows:</li>
 				</ul>
 				<pre><code><span class="hljs-attribute">server</span>:
      <span class="hljs-attribute">tls</span>:
@@ -223,7 +223,7 @@ var testChaincodePath = <span class="hljs-string">"github.com/chaincode_example0
         <span class="hljs-attribute">keyfile</span>: <span class="hljs-string">"/var/hyperledger/production/.membersrvc/tlsca.priv"</span>
 </code></pre><p>This is needed to instruct the member services on which tls cert and key to use.  </p>
 				<ul>
-					<li>Modify <code>$GOPATH/src/github.com/hyperledger/fabric/peer/core.yaml</code> as follows:</li>
+					<li>Modify <code>$GOPATH/src/github.com/TarantulaTechnology/fabric/peer/core.yaml</code> as follows:</li>
 				</ul>
 				<pre><code><span class="hljs-attribute">peer</span>:
     <span class="hljs-attribute">pki</span>:
@@ -235,7 +235,7 @@ var testChaincodePath = <span class="hljs-string">"github.com/chaincode_example0
 				<ul>
 					<li><p>Bootstrap your member services and the peer. This is needed in order to have the file <em>tlsca.cert</em> generated by the member services.</p>
 					</li>
-					<li><p>Copy <code>/var/hyperledger/production/.membersrvc/tlsca.cert</code> to <code>$GOPATH/src/github.com/hyperledger/fabric/sdk/node</code>.</p>
+					<li><p>Copy <code>/var/hyperledger/production/.membersrvc/tlsca.cert</code> to <code>$GOPATH/src/github.com/TarantulaTechnology/fabric/sdk/node</code>.</p>
 					</li>
 				</ul>
 				<p><em>Note:</em> If you cleanup the folder <code>/var/hyperledger/production</code> then don&#39;t forget to copy again the <em>tlsca.cert</em> file as described above.</p>
@@ -244,15 +244,15 @@ var testChaincodePath = <span class="hljs-string">"github.com/chaincode_example0
 				<p>From your command line terminal, move to the <code>devenv</code> subdirectory of your workspace environment. Log into a Vagrant terminal by executing the following command:</p>
 				<pre><code><span class="hljs-title">vagrant</span> ssh
 </code></pre><p>Build the <b>Certificate Authority (CA)</b> server with the commands below:</p>
-				<pre><code>cd <span class="hljs-variable">$GOPATH</span>/src/github.com/hyperledger/fabric/membersrvc
+				<pre><code>cd <span class="hljs-variable">$GOPATH</span>/src/github.com/TarantulaTechnology/fabric/membersrvc
 go build
-</code></pre><p>Next, enable the security and privacy settings on the peer by setting <code>security.enabled</code> and <code>security.privacy</code> settings to <code>true</code> inside the <a href="https://github.com/hyperledger/fabric/blob/master/peer/core.yaml">core.yaml</a>. Then build the peer with the following steps.</p>
+</code></pre><p>Next, enable the security and privacy settings on the peer by setting <code>security.enabled</code> and <code>security.privacy</code> settings to <code>true</code> inside the <a href="https://github.com/TarantulaTechnology/fabric/blob/master/peer/core.yaml">core.yaml</a>. Then build the peer with the following steps.</p>
 				<p>Build the peer process with the commands below.</p>
-				<pre><code>cd <span class="hljs-variable">$GOPATH</span>/src/github.com/hyperledger/fabric/peer
+				<pre><code>cd <span class="hljs-variable">$GOPATH</span>/src/github.com/TarantulaTechnology/fabric/peer
 go build
 </code></pre><h3 id="running-the-sdk-unit-tests">Running the SDK unit tests</h3>
 				<p>HLC includes a set of unit tests implemented with the <a href="https://github.com/substack/tape">tape framework</a>. To run the unit tests, execute the following commands.</p>
-				<pre><code>cd <span class="hljs-variable">$GOPATH</span>/src/github.com/hyperledger/fabric
+				<pre><code>cd <span class="hljs-variable">$GOPATH</span>/src/github.com/TarantulaTechnology/fabric
 make node-sdk-unit-tests
 </code></pre><p>The following are brief descriptions of each of the unit tests that are being run.</p>
 				<h4 id="registrar">registrar</h4>
@@ -267,7 +267,7 @@ make node-sdk-unit-tests
 				<p>If you see errors stating that the client has already been registered/enrolled, keep in mind that you can perform the enrollment process only once, as the enrollmentSecret is a one-time-use password. You will see these errors if you have performed a user registration/enrollment and subsequently deleted the crypto tokens stored on the client side. The next time you try to enroll, errors similar to the ones below will be seen.</p>
 				<pre><code>   Error: identity <span class="hljs-operator">or</span> <span class="hljs-keyword">token</span> <span class="hljs-built_in">do</span> <span class="hljs-operator">not</span> match
 </code></pre><pre><code>   Error: <span class="hljs-keyword">user</span> <span class="hljs-title">is</span> already registered
-</code></pre><p>To address this, remove any stored crypto material from the CA server by following the instructions <a href="https://github.com/hyperledger/fabric/blob/master/docs/API/SandboxSetup.md#removing-temporary-files-when-security-is-enabled">here</a>. You will also need to remove any of the crypto tokens stored on the client side by deleting the KeyValStore directory. That directory is configurable and is set to <code>/tmp/keyValStore</code> within the unit tests.</p>
+</code></pre><p>To address this, remove any stored crypto material from the CA server by following the instructions <a href="https://github.com/TarantulaTechnology/fabric/blob/master/docs/API/SandboxSetup.md#removing-temporary-files-when-security-is-enabled">here</a>. You will also need to remove any of the crypto tokens stored on the client side by deleting the KeyValStore directory. That directory is configurable and is set to <code>/tmp/keyValStore</code> within the unit tests.</p>
 				<h2 id="going-deeper">Going Deeper</h2>
 				<h4 id="pluggability">Pluggability</h4>
 				<p>HLC was designed to support two pluggable components:</p>

@@ -17,7 +17,7 @@ limitations under the License.
 package obcpbft
 
 import (
-	"github.com/hyperledger/fabric/consensus"
+	"github.com/TarantulaTechnology/fabric/consensus"
 )
 
 type persistForward struct {

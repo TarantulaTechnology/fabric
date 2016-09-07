@@ -25,7 +25,7 @@ Event client should output "Event Address: 172.17.0.2:31315" and wait for events
 ## Create a deploy transaction
 Submit a transaction to deploy chaincode_example02.
 
-CORE_PEER_ADDRESS=172.17.0.2:30303 peer chaincode deploy -p github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02 -c '{"Function":"init", "Args": ["a","100", "b", "200"]}'
+CORE_PEER_ADDRESS=172.17.0.2:30303 peer chaincode deploy -p github.com/TarantulaTechnology/fabric/examples/chaincode/go/chaincode_example02 -c '{"Function":"init", "Args": ["a","100", "b", "200"]}'
 
 Notice success transaction in the events client.
 

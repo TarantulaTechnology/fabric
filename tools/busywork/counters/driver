@@ -609,7 +609,7 @@ proc peerUser {peer} {
 # If we are deploying, we go to each peer in round-robin order to deploy the
 # next of the chaincodes.
 
-set chaincode "github.com/hyperledger/fabric/tools/busywork/counters"
+set chaincode "github.com/TarantulaTechnology/fabric/tools/busywork/counters"
 
 if {[parms deploy]} {
     

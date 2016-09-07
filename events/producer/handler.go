@@ -19,7 +19,7 @@ package producer
 import (
 	"fmt"
 
-	pb "github.com/hyperledger/fabric/protos"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 )
 
 type handler struct {

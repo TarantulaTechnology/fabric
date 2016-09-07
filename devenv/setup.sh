@@ -92,7 +92,7 @@ sudo mkdir -p /var/hyperledger
 sudo chown -R vagrant:vagrant /var/hyperledger
 
 # Build the actual hyperledger peer (must be done before chown below)
-cd $GOPATH/src/github.com/hyperledger/fabric
+cd $GOPATH/src/github.com/TarantulaTechnology/fabric
 make clean peer gotools
 
 # Ensure permissions are set for GOPATH

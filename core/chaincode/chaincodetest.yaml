@@ -170,8 +170,8 @@ peer:
         # Copy GOPATH src and install Peer
         COPY src $GOPATH/src
         RUN mkdir -p /var/hyperledger/db
-        WORKDIR $GOPATH/src/github.com/hyperledger/fabric/peer/
-        RUN CGO_CFLAGS=" " CGO_LDFLAGS="-lrocksdb -lstdc++ -lm -lz -lbz2 -lsnappy" go install && cp $GOPATH/src/github.com/hyperledger/fabric/peer/core.yaml $GOPATH/bin
+        WORKDIR $GOPATH/src/github.com/TarantulaTechnology/fabric/peer/
+        RUN CGO_CFLAGS=" " CGO_LDFLAGS="-lrocksdb -lstdc++ -lm -lz -lbz2 -lsnappy" go install && cp $GOPATH/src/github.com/TarantulaTechnology/fabric/peer/core.yaml $GOPATH/bin
 
 
     # The Address this Peer will listen on
@@ -410,7 +410,7 @@ ledger:
       chaincodes:
 
         #sample_syscc:
-        #  path: github.com/hyperledger/fabric/core/system_chaincode/sample_syscc
+        #  path: github.com/TarantulaTechnology/fabric/core/system_chaincode/sample_syscc
         #  type: GOLANG
         #  constructor:
         #    args:

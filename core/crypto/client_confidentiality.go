@@ -21,9 +21,9 @@ import (
 	"encoding/asn1"
 	"errors"
 
-	"github.com/hyperledger/fabric/core/crypto/primitives"
-	"github.com/hyperledger/fabric/core/crypto/utils"
-	obc "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives"
+	"github.com/TarantulaTechnology/fabric/core/crypto/utils"
+	obc "github.com/TarantulaTechnology/fabric/protos"
 )
 
 func (client *clientImpl) encryptTx(tx *obc.Transaction) error {

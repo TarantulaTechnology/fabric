@@ -23,9 +23,9 @@ import (
 
 	"fmt"
 
-	"github.com/hyperledger/fabric/core/db"
-	"github.com/hyperledger/fabric/core/util"
-	"github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/core/db"
+	"github.com/TarantulaTechnology/fabric/core/util"
+	"github.com/TarantulaTechnology/fabric/protos"
 	"github.com/tecbot/gorocksdb"
 	"golang.org/x/net/context"
 )

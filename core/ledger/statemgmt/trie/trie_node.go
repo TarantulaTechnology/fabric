@@ -21,7 +21,7 @@ import (
 	"sort"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/core/util"
+	"github.com/TarantulaTechnology/fabric/core/util"
 )
 
 type trieNode struct {

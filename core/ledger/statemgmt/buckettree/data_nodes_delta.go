@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"sort"
 
-	"github.com/hyperledger/fabric/core/ledger/statemgmt"
+	"github.com/TarantulaTechnology/fabric/core/ledger/statemgmt"
 )
 
 // Code for managing changes in data nodes

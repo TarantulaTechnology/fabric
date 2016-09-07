@@ -22,12 +22,12 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/consensus/obcpbft/events"
-	"github.com/hyperledger/fabric/core/ledger/statemgmt"
+	"github.com/TarantulaTechnology/fabric/consensus/obcpbft/events"
+	"github.com/TarantulaTechnology/fabric/core/ledger/statemgmt"
 
 	gp "google/protobuf"
 
-	pb "github.com/hyperledger/fabric/protos"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 	"github.com/spf13/viper"
 )
 

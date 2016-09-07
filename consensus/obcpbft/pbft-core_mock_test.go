@@ -22,8 +22,8 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/spf13/viper"
 
-	"github.com/hyperledger/fabric/consensus/obcpbft/events"
-	pb "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/consensus/obcpbft/events"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 )
 
 type pbftEndpoint struct {

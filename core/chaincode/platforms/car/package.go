@@ -26,8 +26,8 @@ import (
 	"strings"
 	"time"
 
-	cutil "github.com/hyperledger/fabric/core/container/util"
-	pb "github.com/hyperledger/fabric/protos"
+	cutil "github.com/TarantulaTechnology/fabric/core/container/util"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 	"github.com/spf13/viper"
 )
 

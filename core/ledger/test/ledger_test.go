@@ -22,10 +22,10 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"github.com/hyperledger/fabric/core/ledger"
-	"github.com/hyperledger/fabric/core/ledger/statemgmt"
-	"github.com/hyperledger/fabric/core/util"
-	"github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/core/ledger"
+	"github.com/TarantulaTechnology/fabric/core/ledger/statemgmt"
+	"github.com/TarantulaTechnology/fabric/core/util"
+	"github.com/TarantulaTechnology/fabric/protos"
 )
 
 func appendAll(content ...[]byte) []byte {

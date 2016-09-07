@@ -22,12 +22,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hyperledger/fabric/consensus"
+	"github.com/TarantulaTechnology/fabric/consensus"
 
 	"github.com/golang/protobuf/proto"
 	"github.com/spf13/viper"
 
-	pb "github.com/hyperledger/fabric/protos"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 )
 
 func (op *obcSieve) getPBFTCore() *pbftCore {

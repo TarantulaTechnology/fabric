@@ -23,13 +23,13 @@ From your command line terminal, move to the `devenv` subdirectory of your works
 
 To set up the local development environment with security enabled, you must first build and run the <b>Certificate Authority (CA)</b> server:
 
-    cd $GOPATH/src/github.com/hyperledger/fabric
+    cd $GOPATH/src/github.com/TarantulaTechnology/fabric
     make membersrvc && membersrvc
 
-Running the above commands builds and runs the CA server with the default setup, which is defined in the [membersrvc.yaml](https://github.com/hyperledger/fabric/blob/master/membersrvc/membersrvc.yaml) configuration file. The default configuration includes multiple users who are already registered with the CA; these users are listed in the `eca.users` section of the configuration file. To register additional users with the CA for testing, modify the `eca.users` section of the [membersrvc.yaml](https://github.com/hyperledger/fabric/blob/master/membersrvc/membersrvc.yaml) file to include additional `enrollmentID` and `enrollmentPW` pairs. Note the integer that precedes the `enrollmentPW`. That integer indicates the role of the user, where 1 = client, 2 = non-validating peer, 4 = validating peer, and 8 = auditor.
+Running the above commands builds and runs the CA server with the default setup, which is defined in the [membersrvc.yaml](https://github.com/TarantulaTechnology/fabric/blob/master/membersrvc/membersrvc.yaml) configuration file. The default configuration includes multiple users who are already registered with the CA; these users are listed in the `eca.users` section of the configuration file. To register additional users with the CA for testing, modify the `eca.users` section of the [membersrvc.yaml](https://github.com/TarantulaTechnology/fabric/blob/master/membersrvc/membersrvc.yaml) file to include additional `enrollmentID` and `enrollmentPW` pairs. Note the integer that precedes the `enrollmentPW`. That integer indicates the role of the user, where 1 = client, 2 = non-validating peer, 4 = validating peer, and 8 = auditor.
 
 ###Vagrant Terminal 1 (validating peer)
-**Note:** To run with security enabled, first modify the [core.yaml](https://github.com/hyperledger/fabric/blob/master/peer/core.yaml) configuration file to set the `security.enabled` value to `true` before building the peer executable. Alternatively, you can enable security by running the peer with environment variable `CORE_SECURITY_ENABLED=true`. To enable privacy and confidentiality of transactions (requires security to also be enabled), modify the [core.yaml](https://github.com/hyperledger/fabric/blob/master/peer/core.yaml) configuration file to set the `security.privacy` value to `true` as well. Alternatively, you can enable privacy by running the peer with environment variable `CORE_SECURITY_PRIVACY=true`. If you are enabling security and privacy on the peer process with environment variables, it is important to include these environment variables in the command when executing all subsequent peer operations (e.g. deploy, invoke, or query).
+**Note:** To run with security enabled, first modify the [core.yaml](https://github.com/TarantulaTechnology/fabric/blob/master/peer/core.yaml) configuration file to set the `security.enabled` value to `true` before building the peer executable. Alternatively, you can enable security by running the peer with environment variable `CORE_SECURITY_ENABLED=true`. To enable privacy and confidentiality of transactions (requires security to also be enabled), modify the [core.yaml](https://github.com/TarantulaTechnology/fabric/blob/master/peer/core.yaml) configuration file to set the `security.privacy` value to `true` as well. Alternatively, you can enable privacy by running the peer with environment variable `CORE_SECURITY_PRIVACY=true`. If you are enabling security and privacy on the peer process with environment variables, it is important to include these environment variables in the command when executing all subsequent peer operations (e.g. deploy, invoke, or query).
 
 From your command line terminal, move to the `devenv` subdirectory of your workspace environment. Log into a Vagrant terminal by executing the following command:
 
@@ -37,7 +37,7 @@ From your command line terminal, move to the `devenv` subdirectory of your works
 
 Build and run the peer process to enable security and privacy after setting `security.enabled` and `security.privacy` settings to `true`.
 
-    cd $GOPATH/src/github.com/hyperledger/fabric
+    cd $GOPATH/src/github.com/TarantulaTechnology/fabric
     make peer
     peer node start --peer-chaincodedev
 
@@ -53,7 +53,7 @@ From your command line terminal, move to the `devenv` subdirectory of your works
 
 Build the <b>chaincode_example02</b> code, which is provided in the source code repository:
 
-    cd $GOPATH/src/github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02
+    cd $GOPATH/src/github.com/TarantulaTechnology/fabric/examples/chaincode/go/chaincode_example02
     go build
 
 When you are ready to start creating your own chaincode, create a new subdirectory inside of /fabric/examples/go/chaincode to store your chaincode files. You can copy the <b>chaincode_example02</b> file to the new directory and modify it.
@@ -68,13 +68,13 @@ The chaincode console will display the message "Received REGISTERED, ready for i
 
 #### **Note on REST API port**
 
-The default REST interface port is 5000. It can be configured in [core.yaml](https://github.com/hyperledger/fabric/blob/master/peer/core.yaml) using the `rest.address` property. If using Vagrant, the REST port mapping is defined in [Vagrantfile](https://github.com/hyperledger/fabric/blob/master/devenv/Vagrantfile).
+The default REST interface port is 5000. It can be configured in [core.yaml](https://github.com/TarantulaTechnology/fabric/blob/master/peer/core.yaml) using the `rest.address` property. If using Vagrant, the REST port mapping is defined in [Vagrantfile](https://github.com/TarantulaTechnology/fabric/blob/master/devenv/Vagrantfile).
 
 #### **Note on security functionality**
 
 Current security implementation assumes that end user authentication takes place at the application layer and is not handled by the fabric. Authentication may be performed through any means considered appropriate for the target application. Upon successful user authentication, the application will perform user registration with the CA exactly once. If registration is attempted a second time for the same user, an error will result. During registration, the application sends a request to the certificate authority to verify the user registration and if successful, the CA responds with the user certificates and keys. The enrollment and transaction certificates received from the CA will be stored locally inside `/var/hyperledger/production/crypto/client/` directory. This directory resides on a specific peer node which allows the user to transact only through this specific peer while using the stored crypto material. If the end user needs to perform transactions through more then one peer node, the application is responsible for replicating the crypto material to other peer nodes. This is necessary as registering a given user with the CA a second time will fail.
 
-With security enabled, the CLI commands and REST payloads must be modified to include the `enrollmentID` of a registered user who is logged in; otherwise an error will result. A registered user can be logged in through the CLI or the REST API by following the instructions below. To log in through the CLI, issue the following commands, where `username` is one of the `enrollmentID` values listed in the `eca.users` section of the [membersrvc.yaml](https://github.com/hyperledger/fabric/blob/master/membersrvc/membersrvc.yaml) file.
+With security enabled, the CLI commands and REST payloads must be modified to include the `enrollmentID` of a registered user who is logged in; otherwise an error will result. A registered user can be logged in through the CLI or the REST API by following the instructions below. To log in through the CLI, issue the following commands, where `username` is one of the `enrollmentID` values listed in the `eca.users` section of the [membersrvc.yaml](https://github.com/TarantulaTechnology/fabric/blob/master/membersrvc/membersrvc.yaml) file.
 
 From your command line terminal, move to the `devenv` subdirectory of your workspace environment. Log into a Vagrant terminal by executing the following command:
 
@@ -82,12 +82,12 @@ From your command line terminal, move to the `devenv` subdirectory of your works
 
 Register the user though the CLI, substituting for `<username>` appropriately:
 
-    cd $GOPATH/src/github.com/hyperledger/fabric/peer
+    cd $GOPATH/src/github.com/TarantulaTechnology/fabric/peer
     peer network login <username>
 
-The command will prompt for a password, which must match the `enrollmentPW` listed for the target user in the `eca.users` section of the [membersrvc.yaml](https://github.com/hyperledger/fabric/blob/master/membersrvc/membersrvc.yaml) file. If the password entered does not match the `enrollmentPW`, an error will result.
+The command will prompt for a password, which must match the `enrollmentPW` listed for the target user in the `eca.users` section of the [membersrvc.yaml](https://github.com/TarantulaTechnology/fabric/blob/master/membersrvc/membersrvc.yaml) file. If the password entered does not match the `enrollmentPW`, an error will result.
 
-To log in through the REST API, send a POST request to the `/registrar` endpoint, containing the `enrollmentID` and `enrollmentPW` listed in the `eca.users` section of the [membersrvc.yaml](https://github.com/hyperledger/fabric/blob/master/membersrvc/membersrvc.yaml) file.
+To log in through the REST API, send a POST request to the `/registrar` endpoint, containing the `enrollmentID` and `enrollmentPW` listed in the `eca.users` section of the [membersrvc.yaml](https://github.com/TarantulaTechnology/fabric/blob/master/membersrvc/membersrvc.yaml) file.
 
 <b>REST Request:</b>
 ```

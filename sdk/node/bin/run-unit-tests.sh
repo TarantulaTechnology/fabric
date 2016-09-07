@@ -27,7 +27,7 @@ main() {
 # initialization & cleanup
 init() {
    # Initialize variables
-   FABRIC=$GOPATH/src/github.com/hyperledger/fabric
+   FABRIC=$GOPATH/src/github.com/TarantulaTechnology/fabric
    LOGDIR=/tmp/node-sdk-unit-test
    MSEXE=$FABRIC/build/bin/membersrvc
    MSLOGFILE=$LOGDIR/membersrvc.log
@@ -131,8 +131,8 @@ prepareExampleForDeployInNetworkMode() {
    cp $SRCDIR/${1}.go .
    mkdir -p vendor/github.com/hyperledger
    cd vendor/github.com/hyperledger
-   echo "cloning github.com/hyperledger/fabric; please wait ..."
-   git clone https://github.com/hyperledger/fabric > /dev/null
+   echo "cloning github.com/TarantulaTechnology/fabric; please wait ..."
+   git clone https://github.com/TarantulaTechnology/fabric > /dev/null
    cp -r fabric/vendor/github.com/op ..
    cd ../../..
    go build

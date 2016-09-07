@@ -17,10 +17,10 @@ limitations under the License.
 package executor
 
 import (
-	"github.com/hyperledger/fabric/consensus"
-	"github.com/hyperledger/fabric/consensus/obcpbft/events"
-	"github.com/hyperledger/fabric/core/peer/statetransfer"
-	pb "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/consensus"
+	"github.com/TarantulaTechnology/fabric/consensus/obcpbft/events"
+	"github.com/TarantulaTechnology/fabric/core/peer/statetransfer"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 
 	"github.com/op/go-logging"
 )

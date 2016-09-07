@@ -22,10 +22,10 @@ import (
 	"github.com/op/go-logging"
 	"github.com/spf13/viper"
 
-	"github.com/hyperledger/fabric/consensus/util"
-	"github.com/hyperledger/fabric/core/peer"
+	"github.com/TarantulaTechnology/fabric/consensus/util"
+	"github.com/TarantulaTechnology/fabric/core/peer"
 
-	pb "github.com/hyperledger/fabric/protos"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 )
 
 var logger *logging.Logger // package-level logger

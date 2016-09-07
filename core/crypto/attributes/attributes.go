@@ -25,8 +25,8 @@ import (
 	"strconv"
 	"strings"
 
-	pb "github.com/hyperledger/fabric/core/crypto/attributes/proto"
-	"github.com/hyperledger/fabric/core/crypto/primitives"
+	pb "github.com/TarantulaTechnology/fabric/core/crypto/attributes/proto"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives"
 
 	"github.com/golang/protobuf/proto"
 )

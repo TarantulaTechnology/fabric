@@ -19,7 +19,7 @@ package crypto
 import (
 	"sync"
 
-	"github.com/hyperledger/fabric/core/crypto/utils"
+	"github.com/TarantulaTechnology/fabric/core/crypto/utils"
 )
 
 // Private Variables

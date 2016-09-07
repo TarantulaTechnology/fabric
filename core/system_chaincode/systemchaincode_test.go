@@ -23,12 +23,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hyperledger/fabric/core/chaincode"
-	"github.com/hyperledger/fabric/core/ledger"
-	"github.com/hyperledger/fabric/core/system_chaincode/api"
-	"github.com/hyperledger/fabric/core/system_chaincode/samplesyscc"
-	"github.com/hyperledger/fabric/core/util"
-	pb "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/core/chaincode"
+	"github.com/TarantulaTechnology/fabric/core/ledger"
+	"github.com/TarantulaTechnology/fabric/core/system_chaincode/api"
+	"github.com/TarantulaTechnology/fabric/core/system_chaincode/samplesyscc"
+	"github.com/TarantulaTechnology/fabric/core/util"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 	"github.com/spf13/viper"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
@@ -105,7 +105,7 @@ func TestExecuteDeploySysChaincode(t *testing.T) {
 		{
 			Enabled:   true,
 			Name:      "sample_syscc",
-			Path:      "github.com/hyperledger/fabric/core/system_chaincode/samplesyscc",
+			Path:      "github.com/TarantulaTechnology/fabric/core/system_chaincode/samplesyscc",
 			InitArgs:  []string{},
 			Chaincode: &samplesyscc.SampleSysCC{},
 		},
@@ -113,7 +113,7 @@ func TestExecuteDeploySysChaincode(t *testing.T) {
 
 	RegisterSysCCs()
 
-	url := "github.com/hyperledger/fabric/core/system_chaincode/sample_syscc"
+	url := "github.com/TarantulaTechnology/fabric/core/system_chaincode/sample_syscc"
 	f := "putval"
 	args := []string{"greeting", "hey there"}
 

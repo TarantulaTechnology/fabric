@@ -33,8 +33,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hyperledger/fabric/core/crypto/primitives"
-	pb "github.com/hyperledger/fabric/membersrvc/protos"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives"
+	pb "github.com/TarantulaTechnology/fabric/membersrvc/protos"
 
 	_ "github.com/mattn/go-sqlite3" // This blank import is required to load sqlite3 driver
 	"github.com/spf13/viper"

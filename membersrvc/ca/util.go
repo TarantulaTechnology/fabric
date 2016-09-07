@@ -27,7 +27,7 @@ import (
 	mrand "math/rand"
 	"time"
 
-	pb "github.com/hyperledger/fabric/membersrvc/protos"
+	pb "github.com/TarantulaTechnology/fabric/membersrvc/protos"
 )
 
 const letterBytes = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"

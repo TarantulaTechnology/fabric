@@ -22,7 +22,7 @@ From within the VM, you can build, run, and test your environment.
 
 #### 1. Go build
 ```
-cd $GOPATH/src/github.com/hyperledger/fabric
+cd $GOPATH/src/github.com/TarantulaTechnology/fabric
 make peer
 ```
 
@@ -79,7 +79,7 @@ New code must be accompanied by test cases both in unit and Behave tests.
 #### 3.1 Go Unit Tests
 Use the following sequence to run all unit tests
 
-    cd $GOPATH/src/github.com/hyperledger/fabric
+    cd $GOPATH/src/github.com/TarantulaTechnology/fabric
     make unit-test
 
 To run a specific test use the `-run RE` flag where RE is a regular expression that matches the test case name. To run tests with verbose output use the `-v` flag. For example, to run the `TestGetFoo` test case, change to the directory containing the `foo_test.go` and call/excecute
@@ -88,13 +88,13 @@ To run a specific test use the `-run RE` flag where RE is a regular expression t
 
 #### 3.2 Node.js Unit Tests
 
-You must also run the Node.js unit tests to insure that the Node.js client SDK is not broken by your changes. To run the Node.js unit tests, follow the instructions [here](https://github.com/hyperledger/fabric/tree/master/sdk/node#unit-tests).
+You must also run the Node.js unit tests to insure that the Node.js client SDK is not broken by your changes. To run the Node.js unit tests, follow the instructions [here](https://github.com/TarantulaTechnology/fabric/tree/master/sdk/node#unit-tests).
 
 #### 3.3 Behave Tests
 [Behave](http://pythonhosted.org/behave/) tests will setup networks of peers with different security and consensus configurations and verify that transactions run properly. To run these tests
 
 ```
-cd $GOPATH/src/github.com/hyperledger/fabric
+cd $GOPATH/src/github.com/TarantulaTechnology/fabric
 make behave
 ```
 Some of the Behave tests run inside Docker containers. If a test fails and you want to have the logs from the Docker containers, run the tests with this option
@@ -104,12 +104,12 @@ behave -D logs=Y
 
 Note, in order to run behave directly, you must run 'make images' first to build the necessary `peer` and `member services` docker images. These images can also be individually built when `go test` is called with the following parameters:
 ```
-go test github.com/hyperledger/fabric/core/container -run=BuildImage_Peer
-go test github.com/hyperledger/fabric/core/container -run=BuildImage_Obcca
+go test github.com/TarantulaTechnology/fabric/core/container -run=BuildImage_Peer
+go test github.com/TarantulaTechnology/fabric/core/container -run=BuildImage_Obcca
 ```
 
 ## Building outside of Vagrant <a name="vagrant"></a>
-It is possible to build the project and run peers outside of Vagrant. Generally speaking, one has to 'translate' the vagrant [setup file](https://github.com/hyperledger/fabric/blob/master/devenv/setup.sh) to the platform of your choice.
+It is possible to build the project and run peers outside of Vagrant. Generally speaking, one has to 'translate' the vagrant [setup file](https://github.com/TarantulaTechnology/fabric/blob/master/devenv/setup.sh) to the platform of your choice.
 
 ### Prerequisites
 * [Git client](https://git-scm.com/downloads)
@@ -150,7 +150,7 @@ pip install -I flask==0.10.1 python-dateutil==2.2 pytz==2014.3 pyyaml==3.10 couc
 ```
 
 ### Building on Z
-To make building on Z easier and faster, [this script](https://github.com/hyperledger/fabric/tree/master/devenv/setupRHELonZ.sh) is provided (which is similar to the [setup file](https://github.com/hyperledger/fabric/blob/master/devenv/setup.sh) provided for vagrant). This script has been tested only on RHEL 7.2 and has some assumptions one might want to re-visit (firewall settings, development as root user, etc.). It is however sufficient for development in a personally-assigned VM instance.
+To make building on Z easier and faster, [this script](https://github.com/TarantulaTechnology/fabric/tree/master/devenv/setupRHELonZ.sh) is provided (which is similar to the [setup file](https://github.com/TarantulaTechnology/fabric/blob/master/devenv/setup.sh) provided for vagrant). This script has been tested only on RHEL 7.2 and has some assumptions one might want to re-visit (firewall settings, development as root user, etc.). It is however sufficient for development in a personally-assigned VM instance.
 
 To get started, from a freshly installed OS:
 ```
@@ -158,13 +158,13 @@ sudo su
 yum install git
 mkdir -p $HOME/git/src/github.com/hyperledger
 cd $HOME/git/src/github.com/hyperledger
-git clone https://github.com/hyperledger/fabric.git
+git clone https://github.com/TarantulaTechnology/fabric.git
 source fabric/devenv/setupRHELonZ.sh
 ```
 From there, follow instructions at [Installation](install.md):
 
 ```
-cd $GOPATH/src/github.com/hyperledger/fabric
+cd $GOPATH/src/github.com/TarantulaTechnology/fabric
 make peer unit-test behave
 ```
 
@@ -180,7 +180,7 @@ brew install go rocksdb snappy gnu-tar     # For RocksDB version 4.1, you can co
 eval $(docker-machine env)
 export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
 
-cd $GOPATH/src/github.com/hyperledger/fabric
+cd $GOPATH/src/github.com/TarantulaTechnology/fabric
 make peer
 ```
 

@@ -37,7 +37,7 @@ If you continue with `core.autocrlf` set to `true`, the `vagrant up` command wil
 
 #### Cloning the Peer project
 
-Create a fork of the [fabric](https://github.com/hyperledger/fabric) repository using the GitHub web interface. Next, clone your fork in the appropriate location.
+Create a fork of the [fabric](https://github.com/TarantulaTechnology/fabric) repository using the GitHub web interface. Next, clone your fork in the appropriate location.
 
 ```
 cd $GOPATH/src
@@ -50,7 +50,7 @@ git clone https://github.com/<username>/fabric.git
 #### Boostrapping the VM using Vagrant
 
 ```
-cd $GOPATH/src/github.com/hyperledger/fabric/devenv
+cd $GOPATH/src/github.com/TarantulaTechnology/fabric/devenv
 vagrant up
 ```
 
@@ -65,6 +65,6 @@ Once complete, you should now be able to SSH into your new VM with the following
 
     vagrant ssh
 
-Once inside the VM, you can find the peer project under $GOPATH/src/github.com/hyperledger/fabric (as well as /hyperledger).
+Once inside the VM, you can find the peer project under $GOPATH/src/github.com/TarantulaTechnology/fabric (as well as /hyperledger).
 
-**NOTE:** any time you `git clone` any of the projects in your Host's fabric directory (under $GOPATH/src/github.com/hyperledger/fabric), the update will be instantly available within the VM fabric directory.
+**NOTE:** any time you `git clone` any of the projects in your Host's fabric directory (under $GOPATH/src/github.com/TarantulaTechnology/fabric), the update will be instantly available within the VM fabric directory.

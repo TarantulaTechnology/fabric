@@ -20,9 +20,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hyperledger/fabric/core/ledger/testutil"
-	"github.com/hyperledger/fabric/core/util"
-	"github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/core/ledger/testutil"
+	"github.com/TarantulaTechnology/fabric/core/util"
+	"github.com/TarantulaTechnology/fabric/protos"
 )
 
 func TestBlockchain_InfoNoBlock(t *testing.T) {

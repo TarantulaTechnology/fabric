@@ -23,9 +23,9 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/hyperledger/fabric/core/container/ccintf"
-	"github.com/hyperledger/fabric/core/container/dockercontroller"
-	"github.com/hyperledger/fabric/core/container/inproccontroller"
+	"github.com/TarantulaTechnology/fabric/core/container/ccintf"
+	"github.com/TarantulaTechnology/fabric/core/container/dockercontroller"
+	"github.com/TarantulaTechnology/fabric/core/container/inproccontroller"
 )
 
 //abstract virtual image for supporting arbitrary virual machines

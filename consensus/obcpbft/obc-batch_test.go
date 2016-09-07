@@ -20,9 +20,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hyperledger/fabric/consensus"
-	"github.com/hyperledger/fabric/consensus/obcpbft/events"
-	pb "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/consensus"
+	"github.com/TarantulaTechnology/fabric/consensus/obcpbft/events"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 
 	"github.com/golang/protobuf/proto"
 	"github.com/spf13/viper"

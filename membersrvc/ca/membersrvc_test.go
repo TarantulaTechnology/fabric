@@ -26,7 +26,7 @@ import (
 
 	"fmt"
 
-	"github.com/hyperledger/fabric/core/crypto/primitives"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives"
 	"google.golang.org/grpc"
 
 	"time"

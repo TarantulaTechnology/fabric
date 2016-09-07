@@ -112,7 +112,7 @@ linter: gotools
 # Special override for protoc-gen-go since we want to use the version vendored with the project
 gotool.protoc-gen-go:
 	mkdir -p $(GOPATH)/src/github.com/golang/protobuf/
-	cp -r $(GOPATH)/src/github.com/hyperledger/fabric/vendor/github.com/golang/protobuf/ $(GOPATH)/src/github.com/golang/
+	cp -r $(GOPATH)/src/github.com/TarantulaTechnology/fabric/vendor/github.com/golang/protobuf/ $(GOPATH)/src/github.com/golang/
 	go install github.com/golang/protobuf/protoc-gen-go
 	rm -rf $(GOPATH)/src/github.com/golang/protobuf
 
@@ -152,7 +152,7 @@ build/docker/bin/%: build/image/src/.dummy $(PROJECT_FILES)
 		--user=$(UID) \
 		-v $(abspath build/docker/bin):/opt/gopath/bin \
 		-v $(abspath build/docker/pkg):/opt/gopath/pkg \
-		hyperledger/fabric-src go install github.com/hyperledger/fabric/$(TARGET)
+		hyperledger/fabric-src go install github.com/TarantulaTechnology/fabric/$(TARGET)
 
 build/bin:
 	mkdir -p $@

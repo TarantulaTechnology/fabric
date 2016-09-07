@@ -29,7 +29,7 @@ import (
 	"crypto/subtle"
 	"fmt"
 
-	"github.com/hyperledger/fabric/core/crypto/primitives"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives"
 	"golang.org/x/crypto/hkdf"
 )
 

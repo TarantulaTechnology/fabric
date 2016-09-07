@@ -3,7 +3,7 @@ package ca
 import (
 	"time"
 
-	pb "github.com/hyperledger/fabric/membersrvc/protos"
+	pb "github.com/TarantulaTechnology/fabric/membersrvc/protos"
 	"google.golang.org/grpc"
 
 	"github.com/spf13/viper"

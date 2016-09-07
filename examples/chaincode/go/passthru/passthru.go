@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hyperledger/fabric/core/chaincode/shim"
+	"github.com/TarantulaTechnology/fabric/core/chaincode/shim"
 )
 
 // PassthruChaincode passes thru invoke and query to another chaincode where

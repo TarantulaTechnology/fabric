@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	pb "github.com/hyperledger/fabric/protos"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 )
 
 func TestFanIn(t *testing.T) {

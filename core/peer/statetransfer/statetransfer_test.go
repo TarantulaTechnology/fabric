@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	configSetup "github.com/hyperledger/fabric/core/config"
-	"github.com/hyperledger/fabric/core/peer"
-	"github.com/hyperledger/fabric/protos"
+	configSetup "github.com/TarantulaTechnology/fabric/core/config"
+	"github.com/TarantulaTechnology/fabric/core/peer"
+	"github.com/TarantulaTechnology/fabric/protos"
 
 	"github.com/op/go-logging"
 )

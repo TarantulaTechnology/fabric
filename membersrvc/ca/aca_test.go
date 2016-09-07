@@ -29,8 +29,8 @@ import (
 	"crypto/x509"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/core/crypto/primitives"
-	pb "github.com/hyperledger/fabric/membersrvc/protos"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives"
+	pb "github.com/TarantulaTechnology/fabric/membersrvc/protos"
 	"golang.org/x/net/context"
 )
 

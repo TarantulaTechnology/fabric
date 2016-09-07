@@ -27,9 +27,9 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/hyperledger/fabric/core/chaincode/shim"
+	"github.com/TarantulaTechnology/fabric/core/chaincode/shim"
 
-	busy "github.com/hyperledger/fabric/tools/busywork/busywork"
+	busy "github.com/TarantulaTechnology/fabric/tools/busywork/busywork"
 )
 
 // counters implementation

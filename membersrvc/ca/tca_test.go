@@ -30,9 +30,9 @@ import (
 	"golang.org/x/net/context"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/core/crypto"
-	"github.com/hyperledger/fabric/core/crypto/primitives"
-	"github.com/hyperledger/fabric/membersrvc/protos"
+	"github.com/TarantulaTechnology/fabric/core/crypto"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives"
+	"github.com/TarantulaTechnology/fabric/membersrvc/protos"
 )
 
 func TestNewTCA(t *testing.T) {

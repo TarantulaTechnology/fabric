@@ -23,15 +23,15 @@ import (
 	"google/protobuf"
 	"time"
 
-	membersrvc "github.com/hyperledger/fabric/membersrvc/protos"
+	membersrvc "github.com/TarantulaTechnology/fabric/membersrvc/protos"
 
 	"encoding/asn1"
 	"errors"
 	"io/ioutil"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/core/crypto/primitives"
-	"github.com/hyperledger/fabric/core/crypto/primitives/ecies"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives/ecies"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 )

@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/hyperledger/fabric/core/util"
-	pb "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/core/util"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 )
 
 //generateHashcode gets hashcode of the code under path. If path is a HTTP(s) url

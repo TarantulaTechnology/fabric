@@ -23,11 +23,11 @@ import (
 	"sort"
 	"time"
 
-	_ "github.com/hyperledger/fabric/core" // Logging format init
+	_ "github.com/TarantulaTechnology/fabric/core" // Logging format init
 
-	"github.com/hyperledger/fabric/core/ledger/statemgmt"
-	"github.com/hyperledger/fabric/core/peer"
-	"github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/core/ledger/statemgmt"
+	"github.com/TarantulaTechnology/fabric/core/peer"
+	"github.com/TarantulaTechnology/fabric/protos"
 	"github.com/op/go-logging"
 	"github.com/spf13/viper"
 )

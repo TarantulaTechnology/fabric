@@ -20,8 +20,8 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/hyperledger/fabric/core/ledger/statemgmt"
-	"github.com/hyperledger/fabric/core/ledger/testutil"
+	"github.com/TarantulaTechnology/fabric/core/ledger/statemgmt"
+	"github.com/TarantulaTechnology/fabric/core/ledger/testutil"
 )
 
 func TestDataNodesSort(t *testing.T) {

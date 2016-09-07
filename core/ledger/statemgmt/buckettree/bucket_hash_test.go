@@ -19,7 +19,7 @@ package buckettree
 import (
 	"testing"
 
-	"github.com/hyperledger/fabric/core/ledger/testutil"
+	"github.com/TarantulaTechnology/fabric/core/ledger/testutil"
 )
 
 func TestBucketHashCalculator(t *testing.T) {

@@ -25,8 +25,8 @@ import (
 	"google/protobuf"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/core/ledger"
-	pb "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/core/ledger"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 )
 
 var (

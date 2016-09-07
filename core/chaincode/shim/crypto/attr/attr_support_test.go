@@ -24,7 +24,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/hyperledger/fabric/core/crypto/primitives"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives"
 )
 
 var (

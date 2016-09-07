@@ -20,7 +20,7 @@ import (
 	"strings"
 	"testing"
 
-	d "github.com/hyperledger/fabric/discovery"
+	d "github.com/TarantulaTechnology/fabric/discovery"
 )
 
 func TestDiscovery_GetEmptyRootNode(t *testing.T) {

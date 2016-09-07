@@ -26,7 +26,7 @@ import (
 
 	"google/protobuf"
 
-	pb "github.com/hyperledger/fabric/protos"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 )
 
 var log = logging.MustGetLogger("server")

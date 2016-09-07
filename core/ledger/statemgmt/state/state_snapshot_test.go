@@ -19,7 +19,7 @@ package state
 import (
 	"testing"
 
-	"github.com/hyperledger/fabric/core/ledger/testutil"
+	"github.com/TarantulaTechnology/fabric/core/ledger/testutil"
 )
 
 func TestStateSnapshot(t *testing.T) {

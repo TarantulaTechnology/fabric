@@ -58,13 +58,13 @@ proc ::busywork::home {{i_home {}}} {
 # ::busywork::bin
 
 # The busywork::fabric procedure deconstructs the GOPATH and returns the path
-# to the first occurrence of github.com/hyperledger/fabric. The
+# to the first occurrence of github.com/TarantulaTechnology/fabric. The
 # busywork::busywork procedure locates the busywork directory, and
 # busywork::bin locates the busywork/bin directory.
 
 proc ::busywork::fabric {} {
     foreach dir [split $::env(GOPATH)] {
-        set fabric $dir/src/github.com/hyperledger/fabric
+        set fabric $dir/src/github.com/TarantulaTechnology/fabric
         if {[file exists $fabric]} {
             return $fabric
         }

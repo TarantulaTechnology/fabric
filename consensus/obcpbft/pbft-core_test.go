@@ -30,8 +30,8 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/op/go-logging"
 
-	"github.com/hyperledger/fabric/consensus/obcpbft/events"
-	pb "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/consensus/obcpbft/events"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 )
 
 func init() {

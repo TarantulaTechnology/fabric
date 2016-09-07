@@ -20,8 +20,8 @@ import (
 	"crypto/ecdsa"
 	"crypto/x509"
 
-	"github.com/hyperledger/fabric/core/crypto/primitives"
-	"github.com/hyperledger/fabric/core/crypto/utils"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives"
+	"github.com/TarantulaTechnology/fabric/core/crypto/utils"
 )
 
 // Public Struct

@@ -25,9 +25,9 @@ import (
 	"encoding/asn1"
 	"encoding/binary"
 
-	"github.com/hyperledger/fabric/core/crypto/primitives"
-	"github.com/hyperledger/fabric/core/crypto/utils"
-	obc "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives"
+	"github.com/TarantulaTechnology/fabric/core/crypto/utils"
+	obc "github.com/TarantulaTechnology/fabric/protos"
 )
 
 func (validator *validatorImpl) GetStateEncryptor(deployTx, executeTx *obc.Transaction) (StateEncryptor, error) {

@@ -21,7 +21,7 @@ import (
 	"io"
 	"time"
 
-	pb "github.com/hyperledger/fabric/protos"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 	"github.com/op/go-logging"
 )
 

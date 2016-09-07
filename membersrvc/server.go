@@ -27,8 +27,8 @@ import (
 
 	"strings"
 
-	"github.com/hyperledger/fabric/core/crypto"
-	"github.com/hyperledger/fabric/membersrvc/ca"
+	"github.com/TarantulaTechnology/fabric/core/crypto"
+	"github.com/TarantulaTechnology/fabric/membersrvc/ca"
 	"github.com/spf13/viper"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
@@ -47,7 +47,7 @@ func main() {
 	// Path to look for the config file based on GOPATH
 	gopath := os.Getenv("GOPATH")
 	for _, p := range filepath.SplitList(gopath) {
-		cfgpath := filepath.Join(p, "src/github.com/hyperledger/fabric/membersrvc")
+		cfgpath := filepath.Join(p, "src/github.com/TarantulaTechnology/fabric/membersrvc")
 		viper.AddConfigPath(cfgpath)
 	}
 	err := viper.ReadInConfig()

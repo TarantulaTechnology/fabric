@@ -17,7 +17,7 @@ limitations under the License.
 package crypto
 
 import (
-	obc "github.com/hyperledger/fabric/protos"
+	obc "github.com/TarantulaTechnology/fabric/protos"
 	"github.com/op/go-logging"
 
 	"bytes"
@@ -34,11 +34,11 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/hyperledger/fabric/core/crypto/attributes"
-	"github.com/hyperledger/fabric/core/crypto/primitives"
-	"github.com/hyperledger/fabric/core/crypto/utils"
-	"github.com/hyperledger/fabric/core/util"
-	"github.com/hyperledger/fabric/membersrvc/ca"
+	"github.com/TarantulaTechnology/fabric/core/crypto/attributes"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives"
+	"github.com/TarantulaTechnology/fabric/core/crypto/utils"
+	"github.com/TarantulaTechnology/fabric/core/util"
+	"github.com/TarantulaTechnology/fabric/membersrvc/ca"
 	"github.com/spf13/viper"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"

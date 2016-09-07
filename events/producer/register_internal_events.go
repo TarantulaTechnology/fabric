@@ -22,7 +22,7 @@ limitations under the License.
 package producer
 
 import (
-	pb "github.com/hyperledger/fabric/protos"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 )
 
 //----Event Types -----

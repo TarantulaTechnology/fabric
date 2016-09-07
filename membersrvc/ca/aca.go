@@ -36,8 +36,8 @@ import (
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 
-	"github.com/hyperledger/fabric/core/crypto/primitives"
-	pb "github.com/hyperledger/fabric/membersrvc/protos"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives"
+	pb "github.com/TarantulaTechnology/fabric/membersrvc/protos"
 )
 
 var (

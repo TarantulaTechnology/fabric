@@ -19,7 +19,7 @@ package peer
 import (
 	"sync"
 
-	pb "github.com/hyperledger/fabric/protos"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 )
 
 //-----------------------------------------------------------------------------

@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/hyperledger/fabric/core/crypto/primitives"
-	"github.com/hyperledger/fabric/core/crypto/utils"
-	membersrvc "github.com/hyperledger/fabric/membersrvc/protos"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives"
+	"github.com/TarantulaTechnology/fabric/core/crypto/utils"
+	membersrvc "github.com/TarantulaTechnology/fabric/membersrvc/protos"
 	"golang.org/x/net/context"
 )
 

@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/hyperledger/fabric/consensus/obcpbft/events"
+	"github.com/TarantulaTechnology/fabric/consensus/obcpbft/events"
 
-	pb "github.com/hyperledger/fabric/protos"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 
 	"github.com/op/go-logging"
 )

@@ -25,8 +25,8 @@ import (
 	google_protobuf "google/protobuf"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/consensus"
-	pb "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/consensus"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 
 	"github.com/spf13/viper"
 )

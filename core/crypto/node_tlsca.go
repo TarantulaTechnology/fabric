@@ -17,7 +17,7 @@ limitations under the License.
 package crypto
 
 import (
-	membersrvc "github.com/hyperledger/fabric/membersrvc/protos"
+	membersrvc "github.com/TarantulaTechnology/fabric/membersrvc/protos"
 
 	"crypto/ecdsa"
 	"crypto/rand"
@@ -27,8 +27,8 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/core/crypto/primitives"
-	"github.com/hyperledger/fabric/core/util"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives"
+	"github.com/TarantulaTechnology/fabric/core/util"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 )

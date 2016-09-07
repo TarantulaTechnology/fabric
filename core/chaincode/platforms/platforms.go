@@ -20,9 +20,9 @@ import (
 	"archive/tar"
 	"fmt"
 
-	"github.com/hyperledger/fabric/core/chaincode/platforms/car"
-	"github.com/hyperledger/fabric/core/chaincode/platforms/golang"
-	pb "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/core/chaincode/platforms/car"
+	"github.com/TarantulaTechnology/fabric/core/chaincode/platforms/golang"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 )
 
 // Interface for validating the specification and and writing the package for

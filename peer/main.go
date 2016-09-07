@@ -48,17 +48,17 @@ import (
 	"net/http"
 	_ "net/http/pprof"
 
-	"github.com/hyperledger/fabric/consensus/helper"
-	"github.com/hyperledger/fabric/core"
-	"github.com/hyperledger/fabric/core/chaincode"
-	"github.com/hyperledger/fabric/core/comm"
-	"github.com/hyperledger/fabric/core/crypto"
-	"github.com/hyperledger/fabric/core/ledger/genesis"
-	"github.com/hyperledger/fabric/core/peer"
-	"github.com/hyperledger/fabric/core/rest"
-	"github.com/hyperledger/fabric/core/system_chaincode"
-	"github.com/hyperledger/fabric/events/producer"
-	pb "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/consensus/helper"
+	"github.com/TarantulaTechnology/fabric/core"
+	"github.com/TarantulaTechnology/fabric/core/chaincode"
+	"github.com/TarantulaTechnology/fabric/core/comm"
+	"github.com/TarantulaTechnology/fabric/core/crypto"
+	"github.com/TarantulaTechnology/fabric/core/ledger/genesis"
+	"github.com/TarantulaTechnology/fabric/core/peer"
+	"github.com/TarantulaTechnology/fabric/core/rest"
+	"github.com/TarantulaTechnology/fabric/core/system_chaincode"
+	"github.com/TarantulaTechnology/fabric/events/producer"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 )
 
 var logger = logging.MustGetLogger("main")
@@ -262,7 +262,7 @@ func main() {
 	// Path to look for the config file in based on GOPATH
 	gopath := os.Getenv("GOPATH")
 	for _, p := range filepath.SplitList(gopath) {
-		peerpath := filepath.Join(p, "src/github.com/hyperledger/fabric/peer")
+		peerpath := filepath.Join(p, "src/github.com/TarantulaTechnology/fabric/peer")
 		viper.AddConfigPath(peerpath)
 	}
 

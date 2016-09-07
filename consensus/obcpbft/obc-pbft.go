@@ -23,8 +23,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/hyperledger/fabric/consensus"
-	pb "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/consensus"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 
 	"github.com/golang/protobuf/proto"
 	"github.com/spf13/viper"
@@ -81,7 +81,7 @@ func loadConfig() (config *viper.Viper) {
 	// Path to look for the config file in based on GOPATH
 	gopath := os.Getenv("GOPATH")
 	for _, p := range filepath.SplitList(gopath) {
-		obcpbftpath := filepath.Join(p, "src/github.com/hyperledger/fabric/consensus/obcpbft")
+		obcpbftpath := filepath.Join(p, "src/github.com/TarantulaTechnology/fabric/consensus/obcpbft")
 		config.AddConfigPath(obcpbftpath)
 	}
 
@@ -94,7 +94,7 @@ func loadConfig() (config *viper.Viper) {
 
 // Returns the uint64 ID corresponding to a peer handle
 func getValidatorID(handle *pb.PeerID) (id uint64, err error) {
-	// as requested here: https://github.com/hyperledger/fabric/issues/462#issuecomment-170785410
+	// as requested here: https://github.com/TarantulaTechnology/fabric/issues/462#issuecomment-170785410
 	if startsWith := strings.HasPrefix(handle.Name, "vp"); startsWith {
 		id, err = strconv.ParseUint(handle.Name[2:], 10, 64)
 		if err != nil {
@@ -111,7 +111,7 @@ func getValidatorID(handle *pb.PeerID) (id uint64, err error) {
 
 // Returns the peer handle that corresponds to a validator ID (uint64 assigned to it for PBFT)
 func getValidatorHandle(id uint64) (handle *pb.PeerID, err error) {
-	// as requested here: https://github.com/hyperledger/fabric/issues/462#issuecomment-170785410
+	// as requested here: https://github.com/TarantulaTechnology/fabric/issues/462#issuecomment-170785410
 	name := "vp" + strconv.FormatUint(id, 10)
 	return &pb.PeerID{Name: name}, nil
 }

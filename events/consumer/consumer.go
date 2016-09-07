@@ -24,8 +24,8 @@ import (
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 
-	"github.com/hyperledger/fabric/core/comm"
-	ehpb "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/core/comm"
+	ehpb "github.com/TarantulaTechnology/fabric/protos"
 )
 
 //EventsClient holds the stream and adapter for consumer to work with

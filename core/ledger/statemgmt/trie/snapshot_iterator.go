@@ -17,8 +17,8 @@ limitations under the License.
 package trie
 
 import (
-	"github.com/hyperledger/fabric/core/db"
-	"github.com/hyperledger/fabric/core/ledger/statemgmt"
+	"github.com/TarantulaTechnology/fabric/core/db"
+	"github.com/TarantulaTechnology/fabric/core/ledger/statemgmt"
 	"github.com/tecbot/gorocksdb"
 )
 

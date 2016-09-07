@@ -27,11 +27,11 @@ import (
 	"github.com/spf13/viper"
 	"golang.org/x/net/context"
 
-	"github.com/hyperledger/fabric/core/container"
-	"github.com/hyperledger/fabric/core/container/ccintf"
-	"github.com/hyperledger/fabric/core/crypto"
-	"github.com/hyperledger/fabric/core/ledger"
-	pb "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/core/container"
+	"github.com/TarantulaTechnology/fabric/core/container/ccintf"
+	"github.com/TarantulaTechnology/fabric/core/crypto"
+	"github.com/TarantulaTechnology/fabric/core/ledger"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 )
 
 // ChainName is the name of the chain to which this chaincode support belongs to.

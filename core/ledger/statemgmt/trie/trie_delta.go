@@ -17,7 +17,7 @@ limitations under the License.
 package trie
 
 import (
-	"github.com/hyperledger/fabric/core/ledger/statemgmt"
+	"github.com/TarantulaTechnology/fabric/core/ledger/statemgmt"
 )
 
 type levelDeltaMap map[string]*trieNode

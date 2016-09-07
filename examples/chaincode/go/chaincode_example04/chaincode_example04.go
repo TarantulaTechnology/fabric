@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/hyperledger/fabric/core/chaincode/shim"
+	"github.com/TarantulaTechnology/fabric/core/chaincode/shim"
 )
 
 // This chaincode is a test for chaincode invoking another chaincode - invokes chaincode_example02
@@ -31,7 +31,7 @@ type SimpleChaincode struct {
 }
 
 func (t *SimpleChaincode) getChaincodeToCall(stub *shim.ChaincodeStub) (string, error) {
-	//This is the hashcode for github.com/hyperledger/fabric/core/example/chaincode/chaincode_example02
+	//This is the hashcode for github.com/TarantulaTechnology/fabric/core/example/chaincode/chaincode_example02
 	//if the example is modifed this hashcode will change!!
 	chainCodeToCall := "a5389f7dfb9efae379900a41db1503fea2199fe400272b61ac5fe7bd0c6b97cf10ce3aa8dd00cd7626ce02f18accc7e5f2059dae6eb0786838042958352b89fb" //with SHA3
 

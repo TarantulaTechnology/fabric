@@ -19,7 +19,7 @@ package crypto
 import (
 	"crypto/ecdsa"
 
-	"github.com/hyperledger/fabric/core/crypto/primitives"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives"
 )
 
 func (client *clientImpl) registerCryptoEngine() (err error) {

@@ -11,7 +11,7 @@ If you are new to the project, you can begin by reviewing the following document
 - [Requirements WG](https://github.com/hyperledger/hyperledger/wiki/Requirements-WG)
 - [Glossary](glossary.md): to understand the terminology that we use throughout the website and project.
 
-When you are ready to start building applications or to otherwise contribute to the project, we strongly recommend that you read our [protocol specification](protocol-spec.md) for the technical details. Procedurally, we use the agile methodology with a weekly sprint, organized by [issues](https://github.com/hyperledger/fabric/issues), so take a look to familiarize yourself with the current work.
+When you are ready to start building applications or to otherwise contribute to the project, we strongly recommend that you read our [protocol specification](protocol-spec.md) for the technical details. Procedurally, we use the agile methodology with a weekly sprint, organized by [issues](https://github.com/TarantulaTechnology/fabric/issues), so take a look to familiarize yourself with the current work.
 
 ## Quickstart documentation
 In addition to the <b>Getting started</b> documentation, the following quickstart topics are available:

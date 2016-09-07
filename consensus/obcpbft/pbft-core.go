@@ -24,9 +24,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hyperledger/fabric/consensus"
-	"github.com/hyperledger/fabric/consensus/obcpbft/events"
-	_ "github.com/hyperledger/fabric/core" // Needed for logging format init
+	"github.com/TarantulaTechnology/fabric/consensus"
+	"github.com/TarantulaTechnology/fabric/consensus/obcpbft/events"
+	_ "github.com/TarantulaTechnology/fabric/core" // Needed for logging format init
 
 	"github.com/golang/protobuf/proto"
 	"github.com/op/go-logging"
@@ -1152,7 +1152,7 @@ func (instance *pbftCore) witnessCheckpointWeakCert(chkpt *Checkpoint) {
 	if instance.skipInProgress {
 		logger.Debugf("Replica %d is catching up and witnessed a weak certificate for checkpoint %d, weak cert attested to by %d of %d (%v)",
 			instance.id, chkpt.SequenceNumber, i, instance.replicaCount, checkpointMembers)
-		// The view should not be set to active, this should be handled by the yet unimplemented SUSPECT, see https://github.com/hyperledger/fabric/issues/1120
+		// The view should not be set to active, this should be handled by the yet unimplemented SUSPECT, see https://github.com/TarantulaTechnology/fabric/issues/1120
 		instance.retryStateTransfer(target)
 	}
 }

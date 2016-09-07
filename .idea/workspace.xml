@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="58887bc6-ce90-4c2f-b075-cb3b1e40d2a2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bddtests/chaincode/go/table/table.go" afterPath="$PROJECT_DIR$/bddtests/chaincode/go/table/table.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bddtests/chaincode_rbac.feature" afterPath="$PROJECT_DIR$/bddtests/chaincode_rbac.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bddtests/peer_basic.feature" afterPath="$PROJECT_DIR$/bddtests/peer_basic.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bddtests/steps/coverage.py" afterPath="$PROJECT_DIR$/bddtests/steps/coverage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/consensus.go" afterPath="$PROJECT_DIR$/consensus/consensus.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/controller/controller.go" afterPath="$PROJECT_DIR$/consensus/controller/controller.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/executor/executor.go" afterPath="$PROJECT_DIR$/consensus/executor/executor.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/executor/executor_test.go" afterPath="$PROJECT_DIR$/consensus/executor/executor_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/helper/engine.go" afterPath="$PROJECT_DIR$/consensus/helper/engine.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/helper/handler.go" afterPath="$PROJECT_DIR$/consensus/helper/handler.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/helper/helper.go" afterPath="$PROJECT_DIR$/consensus/helper/helper.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/helper/persist/persist.go" afterPath="$PROJECT_DIR$/consensus/helper/persist/persist.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/noops/configutil.go" afterPath="$PROJECT_DIR$/consensus/noops/configutil.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/noops/noops.go" afterPath="$PROJECT_DIR$/consensus/noops/noops.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/noops/txq.go" afterPath="$PROJECT_DIR$/consensus/noops/txq.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/broadcast.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/broadcast.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/broadcast_test.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/broadcast_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/complainer.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/complainer.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/external.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/external.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/fuzz_test.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/fuzz_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/legacyshim.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/legacyshim.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/mock_consumer_test.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/mock_consumer_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/mock_ledger_test.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/mock_ledger_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/mock_network_test.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/mock_network_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/mock_utilities_test.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/mock_utilities_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/obc-batch.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/obc-batch.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/obc-batch_test.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/obc-batch_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/obc-classic.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/obc-classic.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/obc-classic_test.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/obc-classic_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/obc-pbft.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/obc-pbft.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/obc-sieve.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/obc-sieve.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/obc-sieve_test.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/obc-sieve_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/pbft-core.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/pbft-core.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/pbft-core_mock_test.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/pbft-core_mock_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/pbft-core_test.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/pbft-core_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/persist-forward.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/persist-forward.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/util.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/util.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/obcpbft/viewchange.go" afterPath="$PROJECT_DIR$/consensus/obcpbft/viewchange.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/util/messagefan.go" afterPath="$PROJECT_DIR$/consensus/util/messagefan.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consensus/util/messagefan_test.go" afterPath="$PROJECT_DIR$/consensus/util/messagefan_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/admin.go" afterPath="$PROJECT_DIR$/core/admin.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/chaincode_support.go" afterPath="$PROJECT_DIR$/core/chaincode/chaincode_support.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/chaincodetest.yaml" afterPath="$PROJECT_DIR$/core/chaincode/chaincodetest.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/exectransaction.go" afterPath="$PROJECT_DIR$/core/chaincode/exectransaction.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/exectransaction_test.go" afterPath="$PROJECT_DIR$/core/chaincode/exectransaction_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/handler.go" afterPath="$PROJECT_DIR$/core/chaincode/handler.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/platforms/car/hash.go" afterPath="$PROJECT_DIR$/core/chaincode/platforms/car/hash.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/platforms/car/package.go" afterPath="$PROJECT_DIR$/core/chaincode/platforms/car/package.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/platforms/car/platform.go" afterPath="$PROJECT_DIR$/core/chaincode/platforms/car/platform.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/platforms/car/test/car_test.go" afterPath="$PROJECT_DIR$/core/chaincode/platforms/car/test/car_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/platforms/golang/hash.go" afterPath="$PROJECT_DIR$/core/chaincode/platforms/golang/hash.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/platforms/golang/hash_test.go" afterPath="$PROJECT_DIR$/core/chaincode/platforms/golang/hash_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/platforms/golang/package.go" afterPath="$PROJECT_DIR$/core/chaincode/platforms/golang/package.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/platforms/golang/platform.go" afterPath="$PROJECT_DIR$/core/chaincode/platforms/golang/platform.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/platforms/platforms.go" afterPath="$PROJECT_DIR$/core/chaincode/platforms/platforms.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/shim/chaincode.go" afterPath="$PROJECT_DIR$/core/chaincode/shim/chaincode.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/shim/crypto/attr/attr_support.go" afterPath="$PROJECT_DIR$/core/chaincode/shim/crypto/attr/attr_support.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/shim/crypto/attr/attr_support_test.go" afterPath="$PROJECT_DIR$/core/chaincode/shim/crypto/attr/attr_support_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/shim/crypto/ecdsa/ecdsa.go" afterPath="$PROJECT_DIR$/core/chaincode/shim/crypto/ecdsa/ecdsa.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/shim/crypto/ecdsa/ecdsa_test.go" afterPath="$PROJECT_DIR$/core/chaincode/shim/crypto/ecdsa/ecdsa_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/shim/crypto/ecdsa/hash.go" afterPath="$PROJECT_DIR$/core/chaincode/shim/crypto/ecdsa/hash.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/shim/handler.go" afterPath="$PROJECT_DIR$/core/chaincode/shim/handler.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/chaincode/shim/inprocstream.go" afterPath="$PROJECT_DIR$/core/chaincode/shim/inprocstream.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/comm/connection_test.go" afterPath="$PROJECT_DIR$/core/comm/connection_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/container/ccintf/ccintf.go" afterPath="$PROJECT_DIR$/core/container/ccintf/ccintf.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/container/controller.go" afterPath="$PROJECT_DIR$/core/container/controller.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/container/controller_test.go" afterPath="$PROJECT_DIR$/core/container/controller_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/container/dockercontroller/dockercontroller.go" afterPath="$PROJECT_DIR$/core/container/dockercontroller/dockercontroller.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/container/inproccontroller/inproccontroller.go" afterPath="$PROJECT_DIR$/core/container/inproccontroller/inproccontroller.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/container/inproccontroller/inprocstream.go" afterPath="$PROJECT_DIR$/core/container/inproccontroller/inprocstream.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/container/vm.go" afterPath="$PROJECT_DIR$/core/container/vm.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/container/vm_test.go" afterPath="$PROJECT_DIR$/core/container/vm_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/attributes/attributes.go" afterPath="$PROJECT_DIR$/core/crypto/attributes/attributes.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/attributes/attributes_test.go" afterPath="$PROJECT_DIR$/core/crypto/attributes/attributes_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/client.go" afterPath="$PROJECT_DIR$/core/crypto/client.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/client_confidentiality.go" afterPath="$PROJECT_DIR$/core/crypto/client_confidentiality.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/client_crypto.go" afterPath="$PROJECT_DIR$/core/crypto/client_crypto.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/client_ecert_handler.go" afterPath="$PROJECT_DIR$/core/crypto/client_ecert_handler.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/client_impl.go" afterPath="$PROJECT_DIR$/core/crypto/client_impl.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/client_state.go" afterPath="$PROJECT_DIR$/core/crypto/client_state.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/client_tca.go" afterPath="$PROJECT_DIR$/core/crypto/client_tca.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/client_tcert.go" afterPath="$PROJECT_DIR$/core/crypto/client_tcert.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/client_tcert_handler.go" afterPath="$PROJECT_DIR$/core/crypto/client_tcert_handler.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/client_tcert_pool_st.go" afterPath="$PROJECT_DIR$/core/crypto/client_tcert_pool_st.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/client_tx.go" afterPath="$PROJECT_DIR$/core/crypto/client_tx.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/crypto.go" afterPath="$PROJECT_DIR$/core/crypto/crypto.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/crypto_protocol.go" afterPath="$PROJECT_DIR$/core/crypto/crypto_protocol.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/crypto_settings.go" afterPath="$PROJECT_DIR$/core/crypto/crypto_settings.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/crypto_test.go" afterPath="$PROJECT_DIR$/core/crypto/crypto_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/node_crypto.go" afterPath="$PROJECT_DIR$/core/crypto/node_crypto.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/node_eca.go" afterPath="$PROJECT_DIR$/core/crypto/node_eca.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/node_grpc.go" afterPath="$PROJECT_DIR$/core/crypto/node_grpc.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/node_impl.go" afterPath="$PROJECT_DIR$/core/crypto/node_impl.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/node_ks.go" afterPath="$PROJECT_DIR$/core/crypto/node_ks.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/node_sign.go" afterPath="$PROJECT_DIR$/core/crypto/node_sign.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/node_tca.go" afterPath="$PROJECT_DIR$/core/crypto/node_tca.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/node_tlsca.go" afterPath="$PROJECT_DIR$/core/crypto/node_tlsca.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/peer.go" afterPath="$PROJECT_DIR$/core/crypto/peer.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/peer_eca.go" afterPath="$PROJECT_DIR$/core/crypto/peer_eca.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/peer_impl.go" afterPath="$PROJECT_DIR$/core/crypto/peer_impl.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/peer_ks.go" afterPath="$PROJECT_DIR$/core/crypto/peer_ks.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/primitives/aes/gcm.go" afterPath="$PROJECT_DIR$/core/crypto/primitives/aes/gcm.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/primitives/aes/gcm_test.go" afterPath="$PROJECT_DIR$/core/crypto/primitives/aes/gcm_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/primitives/ecies/engine.go" afterPath="$PROJECT_DIR$/core/crypto/primitives/ecies/engine.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/primitives/ecies/es.go" afterPath="$PROJECT_DIR$/core/crypto/primitives/ecies/es.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/primitives/ecies/kg.go" afterPath="$PROJECT_DIR$/core/crypto/primitives/ecies/kg.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/primitives/ecies/pk.go" afterPath="$PROJECT_DIR$/core/crypto/primitives/ecies/pk.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/primitives/ecies/sk.go" afterPath="$PROJECT_DIR$/core/crypto/primitives/ecies/sk.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/primitives/ecies/spi.go" afterPath="$PROJECT_DIR$/core/crypto/primitives/ecies/spi.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/primitives/ecies/spi_test.go" afterPath="$PROJECT_DIR$/core/crypto/primitives/ecies/spi_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/primitives/keys.go" afterPath="$PROJECT_DIR$/core/crypto/primitives/keys.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/primitives/x509.go" afterPath="$PROJECT_DIR$/core/crypto/primitives/x509.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/validator.go" afterPath="$PROJECT_DIR$/core/crypto/validator.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/validator_confidentiality.go" afterPath="$PROJECT_DIR$/core/crypto/validator_confidentiality.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/validator_impl.go" afterPath="$PROJECT_DIR$/core/crypto/validator_impl.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/validator_state.go" afterPath="$PROJECT_DIR$/core/crypto/validator_state.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/crypto/validator_validity_period.go" afterPath="$PROJECT_DIR$/core/crypto/validator_validity_period.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/devops.go" afterPath="$PROJECT_DIR$/core/devops.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/devops_test.go" afterPath="$PROJECT_DIR$/core/devops_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/discovery_test.go" afterPath="$PROJECT_DIR$/core/discovery_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/benchmark_scripts/buckettree/buckettree.sh" afterPath="$PROJECT_DIR$/core/ledger/benchmark_scripts/buckettree/buckettree.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/benchmark_scripts/ledger/db.sh" afterPath="$PROJECT_DIR$/core/ledger/benchmark_scripts/ledger/db.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/benchmark_scripts/ledger/randomTransactions.sh" afterPath="$PROJECT_DIR$/core/ledger/benchmark_scripts/ledger/randomTransactions.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/benchmark_scripts/ledger/singleKeyTransaction.sh" afterPath="$PROJECT_DIR$/core/ledger/benchmark_scripts/ledger/singleKeyTransaction.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/benchmark_scripts/statemgmt/cryptoHash.sh" afterPath="$PROJECT_DIR$/core/ledger/benchmark_scripts/statemgmt/cryptoHash.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/blockchain.go" afterPath="$PROJECT_DIR$/core/ledger/blockchain.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/blockchain_indexes.go" afterPath="$PROJECT_DIR$/core/ledger/blockchain_indexes.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/blockchain_indexes_async.go" afterPath="$PROJECT_DIR$/core/ledger/blockchain_indexes_async.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/blockchain_indexes_async_test.go" afterPath="$PROJECT_DIR$/core/ledger/blockchain_indexes_async_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/blockchain_indexes_test.go" afterPath="$PROJECT_DIR$/core/ledger/blockchain_indexes_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/blockchain_test.go" afterPath="$PROJECT_DIR$/core/ledger/blockchain_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/genesis/genesis.go" afterPath="$PROJECT_DIR$/core/ledger/genesis/genesis.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/genesis/genesis_test.go" afterPath="$PROJECT_DIR$/core/ledger/genesis/genesis_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/genesis/genesis_test.yaml" afterPath="$PROJECT_DIR$/core/ledger/genesis/genesis_test.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/ledger.go" afterPath="$PROJECT_DIR$/core/ledger/ledger.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/ledger_test.go" afterPath="$PROJECT_DIR$/core/ledger/ledger_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/ledger_test_exports.go" afterPath="$PROJECT_DIR$/core/ledger/ledger_test_exports.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/perf_test.go" afterPath="$PROJECT_DIR$/core/ledger/perf_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/perfstat/stat_holder.go" afterPath="$PROJECT_DIR$/core/ledger/perfstat/stat_holder.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/pkg_test.go" afterPath="$PROJECT_DIR$/core/ledger/pkg_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/bucket_cache.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/bucket_cache.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/bucket_cache_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/bucket_cache_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/bucket_hash.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/bucket_hash.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/bucket_hash_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/bucket_hash_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/bucket_key_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/bucket_key_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/bucket_node.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/bucket_node.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/bucket_node_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/bucket_node_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/bucket_tree_delta_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/bucket_tree_delta_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/config_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/config_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/data_key.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/data_key.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/data_key_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/data_key_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/data_node.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/data_node.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/data_nodes_delta.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/data_nodes_delta.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/data_nodes_delta_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/data_nodes_delta_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/db_helper.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/db_helper.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/perf_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/perf_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/pkg_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/pkg_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/range_scan_iterator.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/range_scan_iterator.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/range_scan_iterator_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/range_scan_iterator_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/snapshot_iterator.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/snapshot_iterator.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/snapshot_iterator_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/snapshot_iterator_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/state_impl.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/state_impl.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/state_impl_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/buckettree/state_impl_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/perf_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/perf_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/pkg_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/pkg_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/raw/state_impl.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/raw/state_impl.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/state/composite_range_scan_iterator.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/state/composite_range_scan_iterator.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/state/composite_range_scan_iterator_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/state/composite_range_scan_iterator_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/state/pkg_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/state/pkg_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/state/state.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/state/state.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/state/state_snapshot.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/state/state_snapshot.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/state/state_snapshot_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/state/state_snapshot_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/state/state_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/state/state_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/state_delta.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/state_delta.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/state_delta_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/state_delta_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/test_exports.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/test_exports.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/trie/pkg_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/trie/pkg_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/trie/range_scan_iterator.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/trie/range_scan_iterator.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/trie/range_scan_iterator_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/trie/range_scan_iterator_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/trie/snapshot_iterator.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/trie/snapshot_iterator.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/trie/snapshot_iterator_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/trie/snapshot_iterator_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/trie/state_trie.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/trie/state_trie.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/trie/state_trie_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/trie/state_trie_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/trie/trie_db_helper.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/trie/trie_db_helper.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/trie/trie_delta.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/trie/trie_delta.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/trie/trie_key.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/trie/trie_key.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/trie/trie_node.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/trie/trie_node.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/statemgmt/trie/trie_node_test.go" afterPath="$PROJECT_DIR$/core/ledger/statemgmt/trie/trie_node_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/test/ledger_suite_test.go" afterPath="$PROJECT_DIR$/core/ledger/test/ledger_suite_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/test/ledger_test.go" afterPath="$PROJECT_DIR$/core/ledger/test/ledger_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/ledger/testutil/test_util.go" afterPath="$PROJECT_DIR$/core/ledger/testutil/test_util.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/peer/config.go" afterPath="$PROJECT_DIR$/core/peer/config.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/peer/errors.go" afterPath="$PROJECT_DIR$/core/peer/errors.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/peer/handler.go" afterPath="$PROJECT_DIR$/core/peer/handler.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/peer/handler_sync_state.go" afterPath="$PROJECT_DIR$/core/peer/handler_sync_state.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/peer/peer.go" afterPath="$PROJECT_DIR$/core/peer/peer.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/peer/peer_test.go" afterPath="$PROJECT_DIR$/core/peer/peer_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/peer/statetransfer/statetransfer.go" afterPath="$PROJECT_DIR$/core/peer/statetransfer/statetransfer.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/peer/statetransfer/statetransfer_mock_test.go" afterPath="$PROJECT_DIR$/core/peer/statetransfer/statetransfer_mock_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/peer/statetransfer/statetransfer_test.go" afterPath="$PROJECT_DIR$/core/peer/statetransfer/statetransfer_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/rest/api.go" afterPath="$PROJECT_DIR$/core/rest/api.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/rest/api_test.go" afterPath="$PROJECT_DIR$/core/rest/api_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/rest/rest_api.go" afterPath="$PROJECT_DIR$/core/rest/rest_api.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/system_chaincode/api/sysccapi.go" afterPath="$PROJECT_DIR$/core/system_chaincode/api/sysccapi.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/system_chaincode/importsysccs.go" afterPath="$PROJECT_DIR$/core/system_chaincode/importsysccs.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/system_chaincode/samplesyscc/samplesyscc.go" afterPath="$PROJECT_DIR$/core/system_chaincode/samplesyscc/samplesyscc.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/system_chaincode/systemchaincode_test.go" afterPath="$PROJECT_DIR$/core/system_chaincode/systemchaincode_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devenv/README.md" afterPath="$PROJECT_DIR$/devenv/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devenv/Vagrantfile" afterPath="$PROJECT_DIR$/devenv/Vagrantfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devenv/compile_protos.sh" afterPath="$PROJECT_DIR$/devenv/compile_protos.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devenv/setup.sh" afterPath="$PROJECT_DIR$/devenv/setup.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devenv/setupRHELonZ.sh" afterPath="$PROJECT_DIR$/devenv/setupRHELonZ.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/API/ChaincodeAPI.md" afterPath="$PROJECT_DIR$/docs/API/ChaincodeAPI.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/API/CoreAPI.md" afterPath="$PROJECT_DIR$/docs/API/CoreAPI.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/API/SandboxSetup.md" afterPath="$PROJECT_DIR$/docs/API/SandboxSetup.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/README.md" afterPath="$PROJECT_DIR$/docs/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/TravisCI_Readme.md" afterPath="$PROJECT_DIR$/docs/TravisCI_Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/dev-setup/ca-setup.md" afterPath="$PROJECT_DIR$/docs/dev-setup/ca-setup.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/dev-setup/devenv.md" afterPath="$PROJECT_DIR$/docs/dev-setup/devenv.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/dev-setup/devnet-setup.md" afterPath="$PROJECT_DIR$/docs/dev-setup/devnet-setup.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/dev-setup/install.md" afterPath="$PROJECT_DIR$/docs/dev-setup/install.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/protocol-spec.md" afterPath="$PROJECT_DIR$/docs/protocol-spec.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/events/consumer/adapter.go" afterPath="$PROJECT_DIR$/events/consumer/adapter.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/events/consumer/consumer.go" afterPath="$PROJECT_DIR$/events/consumer/consumer.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/events/events_test.go" afterPath="$PROJECT_DIR$/events/events_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/events/producer/eventhelper.go" afterPath="$PROJECT_DIR$/events/producer/eventhelper.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/events/producer/events.go" afterPath="$PROJECT_DIR$/events/producer/events.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/events/producer/handler.go" afterPath="$PROJECT_DIR$/events/producer/handler.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/events/producer/producer.go" afterPath="$PROJECT_DIR$/events/producer/producer.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/events/producer/register_internal_events.go" afterPath="$PROJECT_DIR$/events/producer/register_internal_events.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/chaintool/example02/src/chaincode/chaincode_example02.go" afterPath="$PROJECT_DIR$/examples/chaincode/chaintool/example02/src/chaincode/chaincode_example02.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/asset_management/README.md" afterPath="$PROJECT_DIR$/examples/chaincode/go/asset_management/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/asset_management/app/README.md" afterPath="$PROJECT_DIR$/examples/chaincode/go/asset_management/app/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/asset_management/app/app.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/asset_management/app/app.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/asset_management/app/app_internal.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/asset_management/app/app_internal.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/asset_management/asset_management.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/asset_management/asset_management.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/asset_management_with_roles/asset.yaml" afterPath="$PROJECT_DIR$/examples/chaincode/go/asset_management_with_roles/asset.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/asset_management_with_roles/asset_management_with_roles.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/asset_management_with_roles/asset_management_with_roles.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/asset_management_with_roles/asset_management_with_roles_test.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/asset_management_with_roles/asset_management_with_roles_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/authorizable_counter/authorizable_counter.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/authorizable_counter/authorizable_counter.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/chaincode_example01/chaincode_example01.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/chaincode_example01/chaincode_example01.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/chaincode_example02/chaincode_example02.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/chaincode_example02/chaincode_example02.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/chaincode_example03/chaincode_example03.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/chaincode_example03/chaincode_example03.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/chaincode_example04/chaincode_example04.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/chaincode_example04/chaincode_example04.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/chaincode_example05/chaincode_example05.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/chaincode_example05/chaincode_example05.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/chaincode_example06/chaincode_example06.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/chaincode_example06/chaincode_example06.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/eventsender/eventsender.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/eventsender/eventsender.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/map/map.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/map/map.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/passthru/passthru.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/passthru/passthru.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/rbac_tcerts_no_attrs/rbac.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/rbac_tcerts_no_attrs/rbac.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/rbac_tcerts_no_attrs/rbac_test.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/rbac_tcerts_no_attrs/rbac_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/utxo/README.md" afterPath="$PROJECT_DIR$/examples/chaincode/go/utxo/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/utxo/chaincode.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/utxo/chaincode.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/utxo/store.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/utxo/store.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/utxo/util/utxo.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/utxo/util/utxo.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/chaincode/go/utxo/util/utxo_test.go" afterPath="$PROJECT_DIR$/examples/chaincode/go/utxo/util/utxo_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/events/block-listener/README.md" afterPath="$PROJECT_DIR$/examples/events/block-listener/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/events/block-listener/block-listener.go" afterPath="$PROJECT_DIR$/examples/events/block-listener/block-listener.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/app/Dockerfile.in" afterPath="$PROJECT_DIR$/images/app/Dockerfile.in" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/src/Dockerfile.in" afterPath="$PROJECT_DIR$/images/src/Dockerfile.in" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membersrvc/Dockerfile" afterPath="$PROJECT_DIR$/membersrvc/Dockerfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membersrvc/ca/aca.go" afterPath="$PROJECT_DIR$/membersrvc/ca/aca.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membersrvc/ca/aca_test.go" afterPath="$PROJECT_DIR$/membersrvc/ca/aca_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membersrvc/ca/ca.go" afterPath="$PROJECT_DIR$/membersrvc/ca/ca.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membersrvc/ca/ca_test.go" afterPath="$PROJECT_DIR$/membersrvc/ca/ca_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membersrvc/ca/ca_test.yaml" afterPath="$PROJECT_DIR$/membersrvc/ca/ca_test.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membersrvc/ca/client_grpc.go" afterPath="$PROJECT_DIR$/membersrvc/ca/client_grpc.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membersrvc/ca/eca.go" afterPath="$PROJECT_DIR$/membersrvc/ca/eca.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membersrvc/ca/eca_test.go" afterPath="$PROJECT_DIR$/membersrvc/ca/eca_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membersrvc/ca/membersrvc_test.go" afterPath="$PROJECT_DIR$/membersrvc/ca/membersrvc_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membersrvc/ca/tca.go" afterPath="$PROJECT_DIR$/membersrvc/ca/tca.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membersrvc/ca/tca_test.go" afterPath="$PROJECT_DIR$/membersrvc/ca/tca_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membersrvc/ca/tlsca.go" afterPath="$PROJECT_DIR$/membersrvc/ca/tlsca.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membersrvc/ca/tlsca_test.go" afterPath="$PROJECT_DIR$/membersrvc/ca/tlsca_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membersrvc/ca/util.go" afterPath="$PROJECT_DIR$/membersrvc/ca/util.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/membersrvc/server.go" afterPath="$PROJECT_DIR$/membersrvc/server.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peer/main.go" afterPath="$PROJECT_DIR$/peer/main.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protos/block.go" afterPath="$PROJECT_DIR$/protos/block.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protos/block_test.go" afterPath="$PROJECT_DIR$/protos/block_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protos/transaction.go" afterPath="$PROJECT_DIR$/protos/transaction.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/containerlogs.sh" afterPath="$PROJECT_DIR$/scripts/containerlogs.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/foldercopy.sh" afterPath="$PROJECT_DIR$/scripts/foldercopy.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/goUnitTests.sh" afterPath="$PROJECT_DIR$/scripts/goUnitTests.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/node/README.md" afterPath="$PROJECT_DIR$/sdk/node/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/node/bin/run-unit-tests.sh" afterPath="$PROJECT_DIR$/sdk/node/bin/run-unit-tests.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/node/doc/index.html" afterPath="$PROJECT_DIR$/sdk/node/doc/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/node/lib/hlc.js" afterPath="$PROJECT_DIR$/sdk/node/lib/hlc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/node/makedoc.sh" afterPath="$PROJECT_DIR$/sdk/node/makedoc.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/node/src/hlc.ts" afterPath="$PROJECT_DIR$/sdk/node/src/hlc.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/busywork/README.md" afterPath="$PROJECT_DIR$/tools/busywork/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/busywork/bin/Makefile" afterPath="$PROJECT_DIR$/tools/busywork/bin/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/busywork/counters/counters.go" afterPath="$PROJECT_DIR$/tools/busywork/counters/counters.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/busywork/counters/driver" afterPath="$PROJECT_DIR$/tools/busywork/counters/driver" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/busywork/tcl/busywork.tcl" afterPath="$PROJECT_DIR$/tools/busywork/tcl/busywork.tcl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/dbutility/README.md" afterPath="$PROJECT_DIR$/tools/dbutility/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/dbutility/dump_db_stats.go" afterPath="$PROJECT_DIR$/tools/dbutility/dump_db_stats.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/dbutility/dump_db_stats_test.go" afterPath="$PROJECT_DIR$/tools/dbutility/dump_db_stats_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/vendor.json" afterPath="$PROJECT_DIR$/vendor/vendor.json" />
+    </list>
+    <ignored path="fabric5.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="CLEAR_OUTPUT_DIRECTORY" value="false" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="fabric5" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="consensus.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consensus/consensus.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controller.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consensus/controller/controller.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+              <folding>
+                <marker date="1473208763000" expanded="true" signature="604:841" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="executor.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consensus/executor/executor.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+              <folding>
+                <marker date="1473208763000" expanded="true" signature="602:867" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="executor_test.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consensus/executor/executor_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+              <folding>
+                <marker date="1473208762000" expanded="true" signature="602:780" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="engine.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consensus/helper/engine.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+              <folding>
+                <marker date="1473208762000" expanded="true" signature="600:975" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="handler.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consensus/helper/handler.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+              <folding>
+                <marker date="1473208763000" expanded="true" signature="600:825" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helper.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consensus/helper/helper.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+              <folding>
+                <marker date="1473208763000" expanded="true" signature="600:1150" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="persist.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consensus/helper/persist/persist.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chaincode_example01.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/examples/chaincode/go/chaincode_example01/chaincode_example01.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1155">
+              <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+              <folding>
+                <element signature="e#591#691#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chaincode_example02.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/chaincode/go/chaincode_example02/chaincode_example02.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-210">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#949#1049#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/examples/chaincode/go/chaincode_example01/chaincode_example01.go" />
+        <option value="$PROJECT_DIR$/core/chaincode/shim/handler.go" />
+        <option value="$PROJECT_DIR$/CONTRIBUTING.md" />
+        <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/bddtests/chaincode/go/table/table.go" />
+        <option value="$PROJECT_DIR$/bddtests/chaincode_rbac.feature" />
+        <option value="$PROJECT_DIR$/bddtests/peer_basic.feature" />
+        <option value="$PROJECT_DIR$/bddtests/steps/coverage.py" />
+        <option value="$PROJECT_DIR$/consensus/consensus.go" />
+        <option value="$PROJECT_DIR$/consensus/controller/controller.go" />
+        <option value="$PROJECT_DIR$/consensus/executor/executor.go" />
+        <option value="$PROJECT_DIR$/consensus/executor/executor_test.go" />
+        <option value="$PROJECT_DIR$/consensus/helper/engine.go" />
+        <option value="$PROJECT_DIR$/consensus/helper/handler.go" />
+        <option value="$PROJECT_DIR$/consensus/helper/helper.go" />
+        <option value="$PROJECT_DIR$/consensus/helper/persist/persist.go" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2" />
+    <option name="y" value="23" />
+    <option name="width" value="1274" />
+    <option name="height" value="773" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chaincode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chaincode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chaincode_example03" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chaincode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chaincode_example02" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chaincode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="go" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chaincode_example01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chaincode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chaincode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fabric" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chaincode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="Regex">
+    <option name="pos1" value="218" />
+    <option name="pos2" value="218" />
+    <option name="pos3" value="162" />
+    <option name="pos4" value="444" />
+    <option name="pos5" value="162" />
+    <option name="autoUpdate" value="true" />
+    <option name="referenceOn" value="false" />
+    <option name="referencePos" value="0" />
+    <option name="showLabels" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+  </component>
+  <component name="SQLPlugin.ProjectConfiguration">
+    <queries />
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="2" y="23" width="1274" height="773" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Code Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="IvyIDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TunnelliJ" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5947136" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36282468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2966226" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven-2 Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/core/chaincode/shim/handler.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/chaincode/shim/shim_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#593#643#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/chaincode/chaincode_support.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CONTRIBUTING.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="81">
+            <caret line="13" column="71" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="71" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="114" column="24" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bddtests/chaincode/go/table/table.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bddtests/chaincode_rbac.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bddtests/peer_basic.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bddtests/steps/coverage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consensus/consensus.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consensus/controller/controller.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <marker date="1473208763000" expanded="true" signature="604:841" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consensus/executor/executor.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <marker date="1473208763000" expanded="true" signature="602:867" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consensus/executor/executor_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <folding>
+            <marker date="1473208762000" expanded="true" signature="602:780" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consensus/helper/engine.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <marker date="1473208762000" expanded="true" signature="600:975" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consensus/helper/handler.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <marker date="1473208763000" expanded="true" signature="600:825" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consensus/helper/helper.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding>
+            <marker date="1473208763000" expanded="true" signature="600:1150" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consensus/helper/persist/persist.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/chaincode/go/chaincode_example02/chaincode_example02.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#949#1049#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/chaincode/go/chaincode_example01/chaincode_example01.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+          <folding>
+            <element signature="e#591#691#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

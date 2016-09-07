@@ -36,9 +36,9 @@ import (
 	"path/filepath"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/core/crypto/primitives"
-	"github.com/hyperledger/fabric/core/util"
-	membersrvc "github.com/hyperledger/fabric/membersrvc/protos"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives"
+	"github.com/TarantulaTechnology/fabric/core/util"
+	membersrvc "github.com/TarantulaTechnology/fabric/membersrvc/protos"
 
 	_ "fmt"
 )

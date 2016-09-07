@@ -22,8 +22,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hyperledger/fabric/core/ledger/testutil"
-	"github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/core/ledger/testutil"
+	"github.com/TarantulaTechnology/fabric/protos"
 	"github.com/tecbot/gorocksdb"
 )
 

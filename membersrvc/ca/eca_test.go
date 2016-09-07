@@ -28,9 +28,9 @@ import (
 	"google/protobuf"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/hyperledger/fabric/core/crypto/primitives"
-	"github.com/hyperledger/fabric/core/crypto/primitives/ecies"
-	pb "github.com/hyperledger/fabric/membersrvc/protos"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives/ecies"
+	pb "github.com/TarantulaTechnology/fabric/membersrvc/protos"
 	"golang.org/x/net/context"
 )
 

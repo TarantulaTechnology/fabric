@@ -27,8 +27,8 @@ import (
 	"encoding/base64"
 	"strings"
 
-	"github.com/hyperledger/fabric/core/chaincode/shim"
-	"github.com/hyperledger/fabric/core/crypto"
+	"github.com/TarantulaTechnology/fabric/core/chaincode/shim"
+	"github.com/TarantulaTechnology/fabric/core/crypto"
 	"github.com/op/go-logging"
 )
 

@@ -11,10 +11,10 @@ If you are looking for something to work on, or need some expert assistance in d
 We have a [Requirements WG](https://github.com/hyperledger/hyperledger/wiki/Requirements-WG) that is documenting use cases and from those use cases deriving requirements. If you are interested in contributing to this effort, please feel free to join the discussion in [slack](https://hyperledgerproject.slack.com/messages/requirements/).
 
 ### Reporting bugs
-If you are a user and you find a bug, please submit an [issue](https://github.com/hyperledger/fabric/issues). Please try to provide sufficient information for someone else to reproduce the issue. One of the project's maintainers should respond to your issue within 24 hours. If not, please bump the issue and request that it be reviewed.
+If you are a user and you find a bug, please submit an [issue](https://github.com/TarantulaTechnology/fabric/issues). Please try to provide sufficient information for someone else to reproduce the issue. One of the project's maintainers should respond to your issue within 24 hours. If not, please bump the issue and request that it be reviewed.
 
 ### Fixing issues and working stories
-Review the [issues list](https://github.com/hyperledger/fabric/issues) and find something that interests you. You could also check the ["help wanted"](https://github.com/hyperledger/fabric/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) list. It is wise to start with something relatively straight forward and achievable. Usually there will be a comment in the issue that indicates whether someone has already self-assigned the issue. If no one has already taken it, then add a comment assigning the issue to yourself, eg.: ```I'll work on this issue.```. Please be considerate and rescind the offer in comments if you cannot finish in a reasonable time, or add a comment saying that you are still actively working the issue if you need a little more time.
+Review the [issues list](https://github.com/TarantulaTechnology/fabric/issues) and find something that interests you. You could also check the ["help wanted"](https://github.com/TarantulaTechnology/fabric/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) list. It is wise to start with something relatively straight forward and achievable. Usually there will be a comment in the issue that indicates whether someone has already self-assigned the issue. If no one has already taken it, then add a comment assigning the issue to yourself, eg.: ```I'll work on this issue.```. Please be considerate and rescind the offer in comments if you cannot finish in a reasonable time, or add a comment saying that you are still actively working the issue if you need a little more time.
 
 We are using the [GitHub Flow](https://guides.github.com/introduction/flow/) process to manage code contributions. If you are unfamiliar, please review that link before proceeding.
 
@@ -28,7 +28,7 @@ To work on something, whether a new feature or a bugfix:
 
   3. Add the upstream repository as a remote
   ```
-  git remote add upstream https://github.com/hyperledger/fabric.git
+  git remote add upstream https://github.com/TarantulaTechnology/fabric.git
   ```
 
   4. Create a branch
@@ -56,7 +56,7 @@ To work on something, whether a new feature or a bugfix:
 
   9. Continuous Integration (CI): Be sure to check [Travis](https://travis-ci.org/) or the Slack [#fabric-ci-status](https://hyperledgerproject.slack.com/messages/fabric-ci-status) channel for status of your build. You can re-trigger a build on [Jenkins](https://jenkins.io/) with a PR comment containing `reverify jenkins`.
 
-   Note: While some underlying work to migrate the build system from Travis to Jenkins is taking place, you can ask the [maintainers](https://github.com/hyperledger/fabric/blob/master/MAINTAINERS.txt) to re-trigger a Travis build for your PR, either by adding a comment to the PR or on the [#fabric-ci-status](https://hyperledgerproject.slack.com/messages/fabric-ci-status) Slack channel.
+   Note: While some underlying work to migrate the build system from Travis to Jenkins is taking place, you can ask the [maintainers](https://github.com/TarantulaTechnology/fabric/blob/master/MAINTAINERS.txt) to re-trigger a Travis build for your PR, either by adding a comment to the PR or on the [#fabric-ci-status](https://hyperledgerproject.slack.com/messages/fabric-ci-status) Slack channel.
 
   10. Any code changes that affect documentation should be accompanied by corresponding changes (or additions) to the documentation and tests. This will ensure that if the merged PR is reversed, all traces of the change will be reversed as well.
 
@@ -65,7 +65,7 @@ After your Pull Request (PR) has been reviewed and signed off, a maintainer will
 ## Coding guidelines
 
 ### Coding Golang <a name="coding-go"></a>
-- We require a file [header](https://github.com/hyperledger/fabric/blob/master/docs/dev-setup/headers.txt) in all source code files. Simply copy and paste the header when you create a new file.
+- We require a file [header](https://github.com/TarantulaTechnology/fabric/blob/master/docs/dev-setup/headers.txt) in all source code files. Simply copy and paste the header when you create a new file.
 - We code in Go&trade; and strictly follow the [best practices](http://golang.org/doc/effective_go.html)
 and will not accept any deviations. You must run the following tools against your Go code and fix all errors and warnings:
   - [golint](https://github.com/golang/lint)
@@ -77,7 +77,7 @@ and will not accept any deviations. You must run the following tools against you
   If you modify any `.proto` files, run the following command to generate/update the respective `.pb.go` files.
 
   ```
-  cd $GOPATH/src/github.com/hyperledger/fabric
+  cd $GOPATH/src/github.com/TarantulaTechnology/fabric
   make protos
   ```
 

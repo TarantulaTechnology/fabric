@@ -36,12 +36,12 @@ import (
 	"github.com/op/go-logging"
 	"github.com/spf13/viper"
 
-	core "github.com/hyperledger/fabric/core"
-	"github.com/hyperledger/fabric/core/chaincode"
-	"github.com/hyperledger/fabric/core/comm"
-	"github.com/hyperledger/fabric/core/crypto"
-	"github.com/hyperledger/fabric/core/crypto/primitives"
-	pb "github.com/hyperledger/fabric/protos"
+	core "github.com/TarantulaTechnology/fabric/core"
+	"github.com/TarantulaTechnology/fabric/core/chaincode"
+	"github.com/TarantulaTechnology/fabric/core/comm"
+	"github.com/TarantulaTechnology/fabric/core/crypto"
+	"github.com/TarantulaTechnology/fabric/core/crypto/primitives"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 )
 
 var restLogger = logging.MustGetLogger("rest")

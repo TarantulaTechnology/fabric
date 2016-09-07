@@ -22,7 +22,7 @@ package obcpbft
 import (
 	"time"
 
-	"github.com/hyperledger/fabric/consensus/obcpbft/custodian"
+	"github.com/TarantulaTechnology/fabric/consensus/obcpbft/custodian"
 )
 
 // CustodyPair is a tuple of enqueued id and data object

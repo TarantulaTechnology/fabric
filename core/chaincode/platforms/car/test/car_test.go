@@ -20,9 +20,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hyperledger/fabric/core/config"
-	"github.com/hyperledger/fabric/core/container"
-	pb "github.com/hyperledger/fabric/protos"
+	"github.com/TarantulaTechnology/fabric/core/config"
+	"github.com/TarantulaTechnology/fabric/core/container"
+	pb "github.com/TarantulaTechnology/fabric/protos"
 )
 
 func TestMain(m *testing.M) {
